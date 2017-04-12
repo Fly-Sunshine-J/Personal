@@ -1,0 +1,10 @@
+PODS:
+  - DOPDropDownMenu-Enhanced (1.0.0)
+
+DEPENDENCIES:
+  - DOPDropDownMenu-Enhanced (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
+
+COCOAPODS: 0.39.0

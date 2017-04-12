@@ -1,0 +1,174 @@
+//
+//  CicleProgressView.m
+//  Demo测试
+//
+//  Created by vcyber on 16/6/27.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+#import "CicleProgressView.h"
+
+#define CIRCLE_WIDTH 4
+#define POINT_RADIUS 8
+#define TIMER_INTERVAL 0.05
+
+@interface CicleProgressView ()
+/**
+ *  开始的角度
+ */
+@property (nonatomic, assign) CGFloat startAngle;
+/**
+ *  结束的角度
+ */
+@property (nonatomic, assign) CGFloat endAngle;
+/**
+ *  总时长
+ */
+@property (nonatomic, assign) CGFloat totalTime;
+/**
+ *  剩余时长
+ */
+@property (nonatomic, assign) CGFloat letfTime;
+/**
+ *  圆形的半径
+ */
+@property (nonatomic, assign) CGFloat radius;
+/**
+ *  定时器
+ */
+@property (nonatomic, strong) NSTimer *timer;
+/**
+ *  避免多次开启定时器
+ */
+@property (nonatomic, assign) BOOL timerRunning;
+
+@end
+
+@implementation CicleProgressView
+
+- (instancetype)initWithFrame:(CGRect)frame andCicleRadius:(CGFloat)radius
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initView];
+        [self initDataWithRadius:radius];
+    }
+    return self;
+}
+
+- (void)initView {
+    
+    self.backgroundColor = [UIColor grayColor];
+}
+
+- (void)initDataWithRadius:(CGFloat)radius {
+    
+    self.startAngle = -0.5 * M_PI;
+    self.endAngle = self.startAngle;
+    self.radius = radius;
+}
+
+- (void)drawRect:(CGRect)rect {
+    
+    if (self.totalTime == 0) {
+        self.startAngle = self.endAngle;
+    }else {
+        self.endAngle = (1 - self.letfTime / self.totalTime) * 2 * M_PI + self.startAngle;
+    }
+    
+    UIBezierPath *ciclePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2) radius:self.radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+    ciclePath.lineWidth = CIRCLE_WIDTH;
+    [[UIColor lightGrayColor] setStroke];
+    [ciclePath stroke];
+    
+    UIBezierPath *progressPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2) radius:self.radius startAngle:self.startAngle endAngle:self.endAngle clockwise:YES];
+    [[UIColor redColor] set];
+    progressPath.lineWidth = CIRCLE_WIDTH;
+    [progressPath stroke];
+    
+    CGPoint postion = [self getCurrentPointAtAngle:self.endAngle inRect:rect];
+    
+    UIBezierPath *dot = [UIBezierPath bezierPathWithArcCenter:postion radius:POINT_RADIUS startAngle:0 endAngle:2 * M_PI clockwise:YES];
+    dot.lineWidth = 1;
+    [dot fill];
+    
+    int H = (int)ceil(self.letfTime) / 3600;
+    int M = (int)ceil((self.letfTime - H * 3600)) / 60;
+    int S = (int)ceil(self.letfTime) % 60;
+    NSString *timeString = [NSString stringWithFormat:@"%d时%d分%d秒",H, M, S];
+    
+    CGSize strSize = [timeString sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]}];
+    
+    CGRect strRect = CGRectMake(rect.size.width / 2 - strSize.width / 2, rect.size.height / 2 - strSize.height / 2, strSize.width, strSize.height);
+    [timeString drawInRect:strRect withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]}];
+}
+
+
+- (CGPoint)getCurrentPointAtAngle:(CGFloat)angle inRect:(CGRect)rect {
+    
+    CGFloat y = self.radius * sin(angle);
+    CGFloat x = self.radius * cos(angle);
+    CGPoint postion = CGPointMake(rect.size.width / 2, rect.size.height / 2);
+    postion.x += x;
+    postion.y += y;
+    return postion;
+}
+
+- (void)setTotalSecondTime:(CGFloat)time {
+    
+    self.totalTime = time;
+    self.letfTime = self.totalTime;
+}
+
+- (void)startTimer {
+    
+    if (!self.timerRunning) {
+        _timer = [NSTimer timerWithTimeInterval:TIMER_INTERVAL target:self selector:@selector(setProgress) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+        self.timerRunning = YES;
+    }
+}
+
+- (void)setProgress {
+    if (self.letfTime > 0) {
+        self.letfTime -= TIMER_INTERVAL;
+    }else {
+        [self stopTimer];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(CircleProgressEnd)]) {
+            [self.delegate CircleProgressEnd];
+        }
+    }
+    [self setNeedsDisplay];
+}
+
+
+- (void)pauseTimer {
+    
+    if (self.timerRunning) {
+        [_timer invalidate];
+        _timer = nil;
+        self.timerRunning = NO;
+    }else {
+        [self startTimer];
+    }
+}
+
+- (void)stopTimer {
+    
+    [self pauseTimer];
+    self.startAngle = -0.5 * M_PI;
+    self.endAngle = self.startAngle;
+    self.totalTime = 0;
+    self.letfTime = self.totalTime;
+    [self setNeedsDisplay];
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end

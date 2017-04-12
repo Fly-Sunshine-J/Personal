@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view>
+  <view class="page-bottom">
+    <scroll-view class="leftView" scroll-y="true">
+    <block wx:for-items="{{leftSection}}" wx:for-item="item" wx:key="unique">
+          <view class="leftCell" bindtap="viewDetial" data-itmes="{{item}}">
+            <!--<image class="imageView" src="{{item.image}}"></image>-->
+            <text class="name">{{item.title}}</text>
+          </view>
+        </block>
+    </scroll-view>
+    </view>
+</view>
+ <!--<scroll-view class="leftView" scroll-y="true">
+        <block wx:for-items="{{leftSection}}" wx:for-item="item" wx:key="unique">
+          <view class="leftCell" bindtap="viewDetial" data-itmes="{{item}}">
+            <image class="imageView" src="{{item.image}}"></image>
+            <text class="name">{{item.title}}</text>
+          </view>
+        </block>
+      </scroll-view>-->

@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D753C3731CF68C2D00E27E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3721CF68C2D00E27E96 /* main.m */; };
+		D753C3761CF68C2D00E27E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3751CF68C2D00E27E96 /* AppDelegate.m */; };
+		D753C3791CF68C2D00E27E96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3781CF68C2D00E27E96 /* ViewController.m */; };
+		D753C37C1CF68C2D00E27E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D753C37A1CF68C2D00E27E96 /* Main.storyboard */; };
+		D753C37E1CF68C2D00E27E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D753C37D1CF68C2D00E27E96 /* Assets.xcassets */; };
+		D753C3811CF68C2D00E27E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D753C37F1CF68C2D00E27E96 /* LaunchScreen.storyboard */; };
+		D753C38C1CF68C2D00E27E96 /* AssistiViewTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C38B1CF68C2D00E27E96 /* AssistiViewTouchTests.m */; };
+		D753C3971CF68C2D00E27E96 /* AssistiViewTouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3961CF68C2D00E27E96 /* AssistiViewTouchUITests.m */; };
+		D753C3A61CF68C9C00E27E96 /* AssistViewTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3A51CF68C9C00E27E96 /* AssistViewTouch.m */; };
+		D753C3A91CF6EE6D00E27E96 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D753C3A81CF6EE6D00E27E96 /* MyButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D753C3881CF68C2D00E27E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D753C3661CF68C2D00E27E96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D753C36D1CF68C2D00E27E96;
+			remoteInfo = AssistiViewTouch;
+		};
+		D753C3931CF68C2D00E27E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D753C3661CF68C2D00E27E96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D753C36D1CF68C2D00E27E96;
+			remoteInfo = AssistiViewTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D753C36E1CF68C2D00E27E96 /* AssistiViewTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistiViewTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D753C3721CF68C2D00E27E96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D753C3741CF68C2D00E27E96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D753C3751CF68C2D00E27E96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D753C3771CF68C2D00E27E96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D753C3781CF68C2D00E27E96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D753C37B1CF68C2D00E27E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D753C37D1CF68C2D00E27E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D753C3801CF68C2D00E27E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D753C3821CF68C2D00E27E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D753C3871CF68C2D00E27E96 /* AssistiViewTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiViewTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D753C38B1CF68C2D00E27E96 /* AssistiViewTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistiViewTouchTests.m; sourceTree = "<group>"; };
+		D753C38D1CF68C2D00E27E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D753C3921CF68C2D00E27E96 /* AssistiViewTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiViewTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D753C3961CF68C2D00E27E96 /* AssistiViewTouchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistiViewTouchUITests.m; sourceTree = "<group>"; };
+		D753C3981CF68C2D00E27E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D753C3A41CF68C9C00E27E96 /* AssistViewTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistViewTouch.h; sourceTree = "<group>"; };
+		D753C3A51CF68C9C00E27E96 /* AssistViewTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistViewTouch.m; sourceTree = "<group>"; };
+		D753C3A71CF6EE6D00E27E96 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		D753C3A81CF6EE6D00E27E96 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D753C36B1CF68C2D00E27E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C3841CF68C2D00E27E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C38F1CF68C2D00E27E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D753C3651CF68C2D00E27E96 = {
+			isa = PBXGroup;
+			children = (
+				D753C3701CF68C2D00E27E96 /* AssistiViewTouch */,
+				D753C38A1CF68C2D00E27E96 /* AssistiViewTouchTests */,
+				D753C3951CF68C2D00E27E96 /* AssistiViewTouchUITests */,
+				D753C36F1CF68C2D00E27E96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D753C36F1CF68C2D00E27E96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D753C36E1CF68C2D00E27E96 /* AssistiViewTouch.app */,
+				D753C3871CF68C2D00E27E96 /* AssistiViewTouchTests.xctest */,
+				D753C3921CF68C2D00E27E96 /* AssistiViewTouchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D753C3701CF68C2D00E27E96 /* AssistiViewTouch */ = {
+			isa = PBXGroup;
+			children = (
+				D753C3741CF68C2D00E27E96 /* AppDelegate.h */,
+				D753C3751CF68C2D00E27E96 /* AppDelegate.m */,
+				D753C3771CF68C2D00E27E96 /* ViewController.h */,
+				D753C3781CF68C2D00E27E96 /* ViewController.m */,
+				D753C37A1CF68C2D00E27E96 /* Main.storyboard */,
+				D753C37D1CF68C2D00E27E96 /* Assets.xcassets */,
+				D753C37F1CF68C2D00E27E96 /* LaunchScreen.storyboard */,
+				D753C3821CF68C2D00E27E96 /* Info.plist */,
+				D753C3711CF68C2D00E27E96 /* Supporting Files */,
+				D753C3A41CF68C9C00E27E96 /* AssistViewTouch.h */,
+				D753C3A51CF68C9C00E27E96 /* AssistViewTouch.m */,
+				D753C3A71CF6EE6D00E27E96 /* MyButton.h */,
+				D753C3A81CF6EE6D00E27E96 /* MyButton.m */,
+			);
+			path = AssistiViewTouch;
+			sourceTree = "<group>";
+		};
+		D753C3711CF68C2D00E27E96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D753C3721CF68C2D00E27E96 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D753C38A1CF68C2D00E27E96 /* AssistiViewTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				D753C38B1CF68C2D00E27E96 /* AssistiViewTouchTests.m */,
+				D753C38D1CF68C2D00E27E96 /* Info.plist */,
+			);
+			path = AssistiViewTouchTests;
+			sourceTree = "<group>";
+		};
+		D753C3951CF68C2D00E27E96 /* AssistiViewTouchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D753C3961CF68C2D00E27E96 /* AssistiViewTouchUITests.m */,
+				D753C3981CF68C2D00E27E96 /* Info.plist */,
+			);
+			path = AssistiViewTouchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D753C36D1CF68C2D00E27E96 /* AssistiViewTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D753C39B1CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouch" */;
+			buildPhases = (
+				D753C36A1CF68C2D00E27E96 /* Sources */,
+				D753C36B1CF68C2D00E27E96 /* Frameworks */,
+				D753C36C1CF68C2D00E27E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistiViewTouch;
+			productName = AssistiViewTouch;
+			productReference = D753C36E1CF68C2D00E27E96 /* AssistiViewTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D753C3861CF68C2D00E27E96 /* AssistiViewTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D753C39E1CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouchTests" */;
+			buildPhases = (
+				D753C3831CF68C2D00E27E96 /* Sources */,
+				D753C3841CF68C2D00E27E96 /* Frameworks */,
+				D753C3851CF68C2D00E27E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D753C3891CF68C2D00E27E96 /* PBXTargetDependency */,
+			);
+			name = AssistiViewTouchTests;
+			productName = AssistiViewTouchTests;
+			productReference = D753C3871CF68C2D00E27E96 /* AssistiViewTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D753C3911CF68C2D00E27E96 /* AssistiViewTouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D753C3A11CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouchUITests" */;
+			buildPhases = (
+				D753C38E1CF68C2D00E27E96 /* Sources */,
+				D753C38F1CF68C2D00E27E96 /* Frameworks */,
+				D753C3901CF68C2D00E27E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D753C3941CF68C2D00E27E96 /* PBXTargetDependency */,
+			);
+			name = AssistiViewTouchUITests;
+			productName = AssistiViewTouchUITests;
+			productReference = D753C3921CF68C2D00E27E96 /* AssistiViewTouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D753C3661CF68C2D00E27E96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = vcyber;
+				TargetAttributes = {
+					D753C36D1CF68C2D00E27E96 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D753C3861CF68C2D00E27E96 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D753C36D1CF68C2D00E27E96;
+					};
+					D753C3911CF68C2D00E27E96 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D753C36D1CF68C2D00E27E96;
+					};
+				};
+			};
+			buildConfigurationList = D753C3691CF68C2D00E27E96 /* Build configuration list for PBXProject "AssistiViewTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D753C3651CF68C2D00E27E96;
+			productRefGroup = D753C36F1CF68C2D00E27E96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D753C36D1CF68C2D00E27E96 /* AssistiViewTouch */,
+				D753C3861CF68C2D00E27E96 /* AssistiViewTouchTests */,
+				D753C3911CF68C2D00E27E96 /* AssistiViewTouchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D753C36C1CF68C2D00E27E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753C3811CF68C2D00E27E96 /* LaunchScreen.storyboard in Resources */,
+				D753C37E1CF68C2D00E27E96 /* Assets.xcassets in Resources */,
+				D753C37C1CF68C2D00E27E96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C3851CF68C2D00E27E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C3901CF68C2D00E27E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D753C36A1CF68C2D00E27E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753C3791CF68C2D00E27E96 /* ViewController.m in Sources */,
+				D753C3A61CF68C9C00E27E96 /* AssistViewTouch.m in Sources */,
+				D753C3761CF68C2D00E27E96 /* AppDelegate.m in Sources */,
+				D753C3731CF68C2D00E27E96 /* main.m in Sources */,
+				D753C3A91CF6EE6D00E27E96 /* MyButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C3831CF68C2D00E27E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753C38C1CF68C2D00E27E96 /* AssistiViewTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D753C38E1CF68C2D00E27E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753C3971CF68C2D00E27E96 /* AssistiViewTouchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D753C3891CF68C2D00E27E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D753C36D1CF68C2D00E27E96 /* AssistiViewTouch */;
+			targetProxy = D753C3881CF68C2D00E27E96 /* PBXContainerItemProxy */;
+		};
+		D753C3941CF68C2D00E27E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D753C36D1CF68C2D00E27E96 /* AssistiViewTouch */;
+			targetProxy = D753C3931CF68C2D00E27E96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D753C37A1CF68C2D00E27E96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D753C37B1CF68C2D00E27E96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D753C37F1CF68C2D00E27E96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D753C3801CF68C2D00E27E96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D753C3991CF68C2D00E27E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D753C39A1CF68C2D00E27E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D753C39C1CF68C2D00E27E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AssistiViewTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D753C39D1CF68C2D00E27E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AssistiViewTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D753C39F1CF68C2D00E27E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AssistiViewTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistiViewTouch.app/AssistiViewTouch";
+			};
+			name = Debug;
+		};
+		D753C3A01CF68C2D00E27E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AssistiViewTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistiViewTouch.app/AssistiViewTouch";
+			};
+			name = Release;
+		};
+		D753C3A21CF68C2D00E27E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AssistiViewTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AssistiViewTouch;
+			};
+			name = Debug;
+		};
+		D753C3A31CF68C2D00E27E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AssistiViewTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.AssistiViewTouchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AssistiViewTouch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D753C3691CF68C2D00E27E96 /* Build configuration list for PBXProject "AssistiViewTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D753C3991CF68C2D00E27E96 /* Debug */,
+				D753C39A1CF68C2D00E27E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D753C39B1CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D753C39C1CF68C2D00E27E96 /* Debug */,
+				D753C39D1CF68C2D00E27E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D753C39E1CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D753C39F1CF68C2D00E27E96 /* Debug */,
+				D753C3A01CF68C2D00E27E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D753C3A11CF68C2D00E27E96 /* Build configuration list for PBXNativeTarget "AssistiViewTouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D753C3A21CF68C2D00E27E96 /* Debug */,
+				D753C3A31CF68C2D00E27E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D753C3661CF68C2D00E27E96 /* Project object */;
+}

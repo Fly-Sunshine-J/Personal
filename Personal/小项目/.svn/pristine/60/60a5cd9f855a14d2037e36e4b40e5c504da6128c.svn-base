@@ -1,0 +1,26 @@
+//
+//  AppMacro.swift
+//  ComicAndPicture
+//
+//  Created by vcyber on 16/11/4.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+import Foundation
+
+let SCREEN_WIDTH = UIScreen.main.bounds.width
+let SCREEN_HEIGHT = UIScreen.main.bounds.height
+
+//漫画
+//更新
+let GX_URL = "http://api.playsm.com/index.php?size=20&r=cartoonCategory/getCartoonSetListByCategory&id=20&page="
+//推荐
+let TJ_URL = "http://api.playsm.com/index.php?size=20&r=cartoonBillBoard/getCartoonSetListByBillBoard&id=3&page="
+//热评
+let RP_URL = "http://api.playsm.com/index.php?size=20&r=cartoonBillBoard/getCartoonSetListByBillBoard&id=4&page="
+//新作
+let XZ_URL = "http://api.playsm.com/index.php?size=20&r=cartoonCategory/getCartoonSetListByCategory&id=21&page="
+//搜索
+let SS_URL = "http://api.playsm.com/index.php?size=9&r=cartoonSet/list&page=1&searchName="
+
+		

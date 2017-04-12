@@ -1,0 +1,27 @@
+/**index.wxss**/
+.loading {
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell{
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.imageView{
+  margin-left: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+}
+
+.name {
+  height: 20px;
+  width: 80px;
+  margin-left: 40px;
+}

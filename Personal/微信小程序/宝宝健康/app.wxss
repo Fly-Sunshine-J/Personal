@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+} 

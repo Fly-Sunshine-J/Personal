@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA8244F1D124451000592BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8244E1D124451000592BA /* main.m */; };
+		FBA824521D124451000592BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824511D124451000592BA /* AppDelegate.m */; };
+		FBA824551D124451000592BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824541D124451000592BA /* ViewController.m */; };
+		FBA824581D124451000592BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA824561D124451000592BA /* Main.storyboard */; };
+		FBA8245A1D124451000592BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA824591D124451000592BA /* Assets.xcassets */; };
+		FBA8245D1D124451000592BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA8245B1D124451000592BA /* LaunchScreen.storyboard */; };
+		FBA824681D124452000592BA /* ___popOver_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824671D124452000592BA /* ___popOver_____Tests.m */; };
+		FBA824731D124452000592BA /* ___popOver_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824721D124452000592BA /* ___popOver_____UITests.m */; };
+		FBA824831D124489000592BA /* ZXBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824811D124489000592BA /* ZXBasicViewController.m */; };
+		FBA824841D124489000592BA /* ZXBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA824821D124489000592BA /* ZXBasicViewController.xib */; };
+		FBA824881D12459D000592BA /* ZXPopOverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824861D12459D000592BA /* ZXPopOverTableViewCell.m */; };
+		FBA824891D12459D000592BA /* ZXPopOverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA824871D12459D000592BA /* ZXPopOverTableViewCell.xib */; };
+		FBA8248C1D124DA0000592BA /* ZXPopMenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8248B1D124DA0000592BA /* ZXPopMenuDataModel.m */; };
+		FBA824921D125096000592BA /* ZXPopTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824911D125096000592BA /* ZXPopTableViewDelegate.m */; };
+		FBA824951D12518B000592BA /* ZXPopMenuTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824941D12518B000592BA /* ZXPopMenuTableViewDataSource.m */; };
+		FBA824981D1253E3000592BA /* ZXPopMenuOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA824971D1253E3000592BA /* ZXPopMenuOptions.m */; };
+		FBA8249B1D12555C000592BA /* ZXPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8249A1D12555C000592BA /* ZXPopMenuView.m */; };
+		FBA8249D1D12646F000592BA /* right_menu_payMoney@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8249C1D12646F000592BA /* right_menu_payMoney@3x.png */; };
+		FBA824A11D126545000592BA /* textViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8249F1D126545000592BA /* textViewController.m */; };
+		FBA824A21D126545000592BA /* textViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA824A01D126545000592BA /* textViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA824641D124452000592BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA824421D124451000592BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA824491D124451000592BA;
+			remoteInfo = "类似于popOver弹出框效果";
+		};
+		FBA8246F1D124452000592BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA824421D124451000592BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA824491D124451000592BA;
+			remoteInfo = "类似于popOver弹出框效果";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBA8244A1D124451000592BA /* 类似于popOver弹出框效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "类似于popOver弹出框效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA8244E1D124451000592BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA824501D124451000592BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA824511D124451000592BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA824531D124451000592BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBA824541D124451000592BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBA824571D124451000592BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBA824591D124451000592BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBA8245C1D124451000592BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBA8245E1D124451000592BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA824631D124452000592BA /* 类似于popOver弹出框效果Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "类似于popOver弹出框效果Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA824671D124452000592BA /* ___popOver_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___popOver_____Tests.m"; sourceTree = "<group>"; };
+		FBA824691D124452000592BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA8246E1D124452000592BA /* 类似于popOver弹出框效果UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "类似于popOver弹出框效果UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA824721D124452000592BA /* ___popOver_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___popOver_____UITests.m"; sourceTree = "<group>"; };
+		FBA824741D124452000592BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA824801D124489000592BA /* ZXBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXBasicViewController.h; sourceTree = "<group>"; };
+		FBA824811D124489000592BA /* ZXBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXBasicViewController.m; sourceTree = "<group>"; };
+		FBA824821D124489000592BA /* ZXBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXBasicViewController.xib; sourceTree = "<group>"; };
+		FBA824851D12459D000592BA /* ZXPopOverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopOverTableViewCell.h; path = ../ZXPopOverTableViewCell.h; sourceTree = "<group>"; };
+		FBA824861D12459D000592BA /* ZXPopOverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopOverTableViewCell.m; path = ../ZXPopOverTableViewCell.m; sourceTree = "<group>"; };
+		FBA824871D12459D000592BA /* ZXPopOverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZXPopOverTableViewCell.xib; path = ../ZXPopOverTableViewCell.xib; sourceTree = "<group>"; };
+		FBA8248A1D124DA0000592BA /* ZXPopMenuDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopMenuDataModel.h; path = ../ZXPopMenuDataModel.h; sourceTree = "<group>"; };
+		FBA8248B1D124DA0000592BA /* ZXPopMenuDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopMenuDataModel.m; path = ../ZXPopMenuDataModel.m; sourceTree = "<group>"; };
+		FBA824901D125096000592BA /* ZXPopTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopTableViewDelegate.h; path = ../ZXPopTableViewDelegate.h; sourceTree = "<group>"; };
+		FBA824911D125096000592BA /* ZXPopTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopTableViewDelegate.m; path = ../ZXPopTableViewDelegate.m; sourceTree = "<group>"; };
+		FBA824931D12518B000592BA /* ZXPopMenuTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopMenuTableViewDataSource.h; path = ../ZXPopMenuTableViewDataSource.h; sourceTree = "<group>"; };
+		FBA824941D12518B000592BA /* ZXPopMenuTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopMenuTableViewDataSource.m; path = ../ZXPopMenuTableViewDataSource.m; sourceTree = "<group>"; };
+		FBA824961D1253E3000592BA /* ZXPopMenuOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopMenuOptions.h; path = ../ZXPopMenuOptions.h; sourceTree = "<group>"; };
+		FBA824971D1253E3000592BA /* ZXPopMenuOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopMenuOptions.m; path = ../ZXPopMenuOptions.m; sourceTree = "<group>"; };
+		FBA824991D12555C000592BA /* ZXPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXPopMenuView.h; path = ../ZXPopMenuView.h; sourceTree = "<group>"; };
+		FBA8249A1D12555C000592BA /* ZXPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXPopMenuView.m; path = ../ZXPopMenuView.m; sourceTree = "<group>"; };
+		FBA8249C1D12646F000592BA /* right_menu_payMoney@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right_menu_payMoney@3x.png"; path = "../right_menu_payMoney@3x.png"; sourceTree = "<group>"; };
+		FBA8249E1D126545000592BA /* textViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textViewController.h; sourceTree = "<group>"; };
+		FBA8249F1D126545000592BA /* textViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textViewController.m; sourceTree = "<group>"; };
+		FBA824A01D126545000592BA /* textViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = textViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA824471D124451000592BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA824601D124452000592BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8246B1D124452000592BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA824411D124451000592BA = {
+			isa = PBXGroup;
+			children = (
+				FBA8244C1D124451000592BA /* 类似于popOver弹出框效果 */,
+				FBA824661D124452000592BA /* 类似于popOver弹出框效果Tests */,
+				FBA824711D124452000592BA /* 类似于popOver弹出框效果UITests */,
+				FBA8244B1D124451000592BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA8244B1D124451000592BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8244A1D124451000592BA /* 类似于popOver弹出框效果.app */,
+				FBA824631D124452000592BA /* 类似于popOver弹出框效果Tests.xctest */,
+				FBA8246E1D124452000592BA /* 类似于popOver弹出框效果UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA8244C1D124451000592BA /* 类似于popOver弹出框效果 */ = {
+			isa = PBXGroup;
+			children = (
+				FBA824A31D126907000592BA /* 图片 */,
+				FBA824A41D126907000592BA /* PopOverMenu */,
+				FBA824501D124451000592BA /* AppDelegate.h */,
+				FBA824511D124451000592BA /* AppDelegate.m */,
+				FBA824531D124451000592BA /* ViewController.h */,
+				FBA824541D124451000592BA /* ViewController.m */,
+				FBA824801D124489000592BA /* ZXBasicViewController.h */,
+				FBA824811D124489000592BA /* ZXBasicViewController.m */,
+				FBA824821D124489000592BA /* ZXBasicViewController.xib */,
+				FBA8249E1D126545000592BA /* textViewController.h */,
+				FBA8249F1D126545000592BA /* textViewController.m */,
+				FBA824A01D126545000592BA /* textViewController.xib */,
+				FBA824561D124451000592BA /* Main.storyboard */,
+				FBA824591D124451000592BA /* Assets.xcassets */,
+				FBA8245B1D124451000592BA /* LaunchScreen.storyboard */,
+				FBA8245E1D124451000592BA /* Info.plist */,
+				FBA8244D1D124451000592BA /* Supporting Files */,
+			);
+			path = "类似于popOver弹出框效果";
+			sourceTree = "<group>";
+		};
+		FBA8244D1D124451000592BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8244E1D124451000592BA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA824661D124452000592BA /* 类似于popOver弹出框效果Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA824671D124452000592BA /* ___popOver_____Tests.m */,
+				FBA824691D124452000592BA /* Info.plist */,
+			);
+			path = "类似于popOver弹出框效果Tests";
+			sourceTree = "<group>";
+		};
+		FBA824711D124452000592BA /* 类似于popOver弹出框效果UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA824721D124452000592BA /* ___popOver_____UITests.m */,
+				FBA824741D124452000592BA /* Info.plist */,
+			);
+			path = "类似于popOver弹出框效果UITests";
+			sourceTree = "<group>";
+		};
+		FBA824A31D126907000592BA /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8249C1D12646F000592BA /* right_menu_payMoney@3x.png */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
+		FBA824A41D126907000592BA /* PopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FBA824851D12459D000592BA /* ZXPopOverTableViewCell.h */,
+				FBA824861D12459D000592BA /* ZXPopOverTableViewCell.m */,
+				FBA824871D12459D000592BA /* ZXPopOverTableViewCell.xib */,
+				FBA8248A1D124DA0000592BA /* ZXPopMenuDataModel.h */,
+				FBA8248B1D124DA0000592BA /* ZXPopMenuDataModel.m */,
+				FBA824901D125096000592BA /* ZXPopTableViewDelegate.h */,
+				FBA824911D125096000592BA /* ZXPopTableViewDelegate.m */,
+				FBA824931D12518B000592BA /* ZXPopMenuTableViewDataSource.h */,
+				FBA824941D12518B000592BA /* ZXPopMenuTableViewDataSource.m */,
+				FBA824961D1253E3000592BA /* ZXPopMenuOptions.h */,
+				FBA824971D1253E3000592BA /* ZXPopMenuOptions.m */,
+				FBA824991D12555C000592BA /* ZXPopMenuView.h */,
+				FBA8249A1D12555C000592BA /* ZXPopMenuView.m */,
+			);
+			path = PopOverMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA824491D124451000592BA /* 类似于popOver弹出框效果 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA824771D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果" */;
+			buildPhases = (
+				FBA824461D124451000592BA /* Sources */,
+				FBA824471D124451000592BA /* Frameworks */,
+				FBA824481D124451000592BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "类似于popOver弹出框效果";
+			productName = "类似于popOver弹出框效果";
+			productReference = FBA8244A1D124451000592BA /* 类似于popOver弹出框效果.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA824621D124452000592BA /* 类似于popOver弹出框效果Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA8247A1D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果Tests" */;
+			buildPhases = (
+				FBA8245F1D124452000592BA /* Sources */,
+				FBA824601D124452000592BA /* Frameworks */,
+				FBA824611D124452000592BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA824651D124452000592BA /* PBXTargetDependency */,
+			);
+			name = "类似于popOver弹出框效果Tests";
+			productName = "类似于popOver弹出框效果Tests";
+			productReference = FBA824631D124452000592BA /* 类似于popOver弹出框效果Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBA8246D1D124452000592BA /* 类似于popOver弹出框效果UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA8247D1D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果UITests" */;
+			buildPhases = (
+				FBA8246A1D124452000592BA /* Sources */,
+				FBA8246B1D124452000592BA /* Frameworks */,
+				FBA8246C1D124452000592BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA824701D124452000592BA /* PBXTargetDependency */,
+			);
+			name = "类似于popOver弹出框效果UITests";
+			productName = "类似于popOver弹出框效果UITests";
+			productReference = FBA8246E1D124452000592BA /* 类似于popOver弹出框效果UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA824421D124451000592BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ZouXu;
+				TargetAttributes = {
+					FBA824491D124451000592BA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FBA824621D124452000592BA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBA824491D124451000592BA;
+					};
+					FBA8246D1D124452000592BA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBA824491D124451000592BA;
+					};
+				};
+			};
+			buildConfigurationList = FBA824451D124451000592BA /* Build configuration list for PBXProject "类似于popOver弹出框效果" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA824411D124451000592BA;
+			productRefGroup = FBA8244B1D124451000592BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA824491D124451000592BA /* 类似于popOver弹出框效果 */,
+				FBA824621D124452000592BA /* 类似于popOver弹出框效果Tests */,
+				FBA8246D1D124452000592BA /* 类似于popOver弹出框效果UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA824481D124451000592BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA824891D12459D000592BA /* ZXPopOverTableViewCell.xib in Resources */,
+				FBA8245D1D124451000592BA /* LaunchScreen.storyboard in Resources */,
+				FBA824841D124489000592BA /* ZXBasicViewController.xib in Resources */,
+				FBA8245A1D124451000592BA /* Assets.xcassets in Resources */,
+				FBA824581D124451000592BA /* Main.storyboard in Resources */,
+				FBA824A21D126545000592BA /* textViewController.xib in Resources */,
+				FBA8249D1D12646F000592BA /* right_menu_payMoney@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA824611D124452000592BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8246C1D124452000592BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA824461D124451000592BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA824921D125096000592BA /* ZXPopTableViewDelegate.m in Sources */,
+				FBA8249B1D12555C000592BA /* ZXPopMenuView.m in Sources */,
+				FBA824A11D126545000592BA /* textViewController.m in Sources */,
+				FBA824881D12459D000592BA /* ZXPopOverTableViewCell.m in Sources */,
+				FBA824551D124451000592BA /* ViewController.m in Sources */,
+				FBA8248C1D124DA0000592BA /* ZXPopMenuDataModel.m in Sources */,
+				FBA824981D1253E3000592BA /* ZXPopMenuOptions.m in Sources */,
+				FBA824831D124489000592BA /* ZXBasicViewController.m in Sources */,
+				FBA824951D12518B000592BA /* ZXPopMenuTableViewDataSource.m in Sources */,
+				FBA824521D124451000592BA /* AppDelegate.m in Sources */,
+				FBA8244F1D124451000592BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8245F1D124452000592BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA824681D124452000592BA /* ___popOver_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8246A1D124452000592BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA824731D124452000592BA /* ___popOver_____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA824651D124452000592BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA824491D124451000592BA /* 类似于popOver弹出框效果 */;
+			targetProxy = FBA824641D124452000592BA /* PBXContainerItemProxy */;
+		};
+		FBA824701D124452000592BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA824491D124451000592BA /* 类似于popOver弹出框效果 */;
+			targetProxy = FBA8246F1D124452000592BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA824561D124451000592BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA824571D124451000592BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBA8245B1D124451000592BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA8245C1D124451000592BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA824751D124452000592BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBA824761D124452000592BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA824781D124452000592BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "类似于popOver弹出框效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBA824791D124452000592BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "类似于popOver弹出框效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBA8247B1D124452000592BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "类似于popOver弹出框效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/类似于popOver弹出框效果.app/类似于popOver弹出框效果";
+			};
+			name = Debug;
+		};
+		FBA8247C1D124452000592BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "类似于popOver弹出框效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/类似于popOver弹出框效果.app/类似于popOver弹出框效果";
+			};
+			name = Release;
+		};
+		FBA8247E1D124452000592BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "类似于popOver弹出框效果UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "类似于popOver弹出框效果";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FBA8247F1D124452000592BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "类似于popOver弹出框效果UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wondergroup.---popOver-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "类似于popOver弹出框效果";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA824451D124451000592BA /* Build configuration list for PBXProject "类似于popOver弹出框效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA824751D124452000592BA /* Debug */,
+				FBA824761D124452000592BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA824771D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA824781D124452000592BA /* Debug */,
+				FBA824791D124452000592BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBA8247A1D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8247B1D124452000592BA /* Debug */,
+				FBA8247C1D124452000592BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBA8247D1D124452000592BA /* Build configuration list for PBXNativeTarget "类似于popOver弹出框效果UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8247E1D124452000592BA /* Debug */,
+				FBA8247F1D124452000592BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA824421D124451000592BA /* Project object */;
+}

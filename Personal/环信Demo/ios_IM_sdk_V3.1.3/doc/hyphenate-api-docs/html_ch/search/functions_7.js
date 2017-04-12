@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['getallchatroomsfromserverwitherror_3a',['getAllChatroomsFromServerWithError:',['../protocol_i_e_m_chatroom_manager-p.html#a1d70caa7be255e6f855eb9a43d530c4a',1,'IEMChatroomManager-p']]],
+  ['getallconversations',['getAllConversations',['../protocol_i_e_m_chat_manager-p.html#aba39ab25aa4a5b58623ae97cf6e05b96',1,'IEMChatManager-p']]],
+  ['getallgroups',['getAllGroups',['../protocol_i_e_m_group_manager-p.html#a4110c8f79a3556df2d1a3a8714926b2e',1,'IEMGroupManager-p']]],
+  ['getallignoredgroupids',['getAllIgnoredGroupIds',['../protocol_i_e_m_group_manager-p.html#a6159c16241c6a8351184fe831625b4f4',1,'IEMGroupManager-p']]],
+  ['getblacklist',['getBlackList',['../protocol_i_e_m_contact_manager-p.html#aa2ac0ea9119e4fa46fafc9569e74f161',1,'IEMContactManager-p']]],
+  ['getblacklistfromdb',['getBlackListFromDB',['../protocol_i_e_m_contact_manager-p.html#ac03e2e4323f33d133000c6437f33778e',1,'IEMContactManager-p']]],
+  ['getblacklistfromserverwitherror_3a',['getBlackListFromServerWithError:',['../protocol_i_e_m_contact_manager-p.html#a905843d04ec122ace9c9e582ff5ebea1',1,'IEMContactManager-p']]],
+  ['getcontacts',['getContacts',['../protocol_i_e_m_contact_manager-p.html#ad7882deb360a270bf9c5dd2d15cfc998',1,'IEMContactManager-p']]],
+  ['getcontactsfromdb',['getContactsFromDB',['../protocol_i_e_m_contact_manager-p.html#a925b87daa24d555483be9c9d0e43b645',1,'IEMContactManager-p']]],
+  ['getcontactsfromserverwitherror_3a',['getContactsFromServerWithError:',['../protocol_i_e_m_contact_manager-p.html#a16e8f0707d534c1a2fbbffad85bdee81',1,'IEMContactManager-p']]],
+  ['getconversation_3atype_3acreateifnotexist_3a',['getConversation:type:createIfNotExist:',['../protocol_i_e_m_chat_manager-p.html#aa3146bafebe7a4d2daaff98383feab6c',1,'IEMChatManager-p']]],
+  ['getmessageattachmentpath_3a',['getMessageAttachmentPath:',['../protocol_i_e_m_chat_manager-p.html#a4b53a012c59e6f4da5cdcc76fbbc64fc',1,'IEMChatManager-p']]],
+  ['getmygroupsfromserverwitherror_3a',['getMyGroupsFromServerWithError:',['../protocol_i_e_m_group_manager-p.html#ae28658ff85e719880fe92d929b7f9acb',1,'IEMGroupManager-p']]],
+  ['getpublicgroupsfromserverwithcursor_3apagesize_3aerror_3a',['getPublicGroupsFromServerWithCursor:pageSize:error:',['../protocol_i_e_m_group_manager-p.html#af6e5cffd558572ee043857a06e58feac',1,'IEMGroupManager-p']]],
+  ['getpushoptionsfromserverwitherror_3a',['getPushOptionsFromServerWithError:',['../interface_e_m_client.html#a3aea95ecb234aee1bab4f52b139d8efb',1,'EMClient']]],
+  ['getvideoframerate',['getVideoFramerate',['../interface_e_m_call_session.html#aca30199f223a1b6bf923c00651df28e9',1,'EMCallSession']]],
+  ['getvideoheight',['getVideoHeight',['../interface_e_m_call_session.html#a5ff731a9bf60c69fab77deee15524083',1,'EMCallSession']]],
+  ['getvideolocalbitrate',['getVideoLocalBitrate',['../interface_e_m_call_session.html#a84ae43763bee348e63a9c4597fc81bde',1,'EMCallSession']]],
+  ['getvideolostcnt',['getVideoLostcnt',['../interface_e_m_call_session.html#ae083dcb4561401e891e72b6a898b3b0b',1,'EMCallSession']]],
+  ['getvideoremotebitrate',['getVideoRemoteBitrate',['../interface_e_m_call_session.html#a3affa3dcbcc3f4bd7f8ba66b60549e1e',1,'EMCallSession']]],
+  ['getvideotimedelay',['getVideoTimedelay',['../interface_e_m_call_session.html#a0354c4aeb893ab424d9bcd670004f5a6',1,'EMCallSession']]],
+  ['getvideowidth',['getVideoWidth',['../interface_e_m_call_session.html#a9ee4f64a0718d85f446c890271713930',1,'EMCallSession']]],
+  ['getvoicevolume',['getVoiceVolume',['../interface_e_m_call_session.html#ad27ea42dba118430de891e018d1128c0',1,'EMCallSession']]],
+  ['groupwithid_3a',['groupWithId:',['../interface_e_m_group.html#aa594c898a3c2cb0aca190755acf6b233',1,'EMGroup']]]
+];

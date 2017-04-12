@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-hG-35p">
+                                <rect key="frame" x="271" y="120" width="59" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="GvQ-zi-q0f"/>
+                                    <constraint firstAttribute="width" constant="59" id="Vzc-ws-LLe"/>
+                                    <constraint firstAttribute="height" constant="64" id="tdn-YG-Us3"/>
+                                    <constraint firstAttribute="height" constant="64" id="wKw-xq-ZAz"/>
+                                </constraints>
+                                <state key="normal" title="存储"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GvQ-zi-q0f"/>
+                                        <exclude reference="tdn-YG-Us3"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BA6-B8-uSp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzb-ag-hXT">
+                                <rect key="frame" x="271" y="284" width="59" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="BbC-WZ-bbm"/>
+                                    <constraint firstAttribute="height" constant="64" id="Ih8-AW-gED"/>
+                                    <constraint firstAttribute="height" constant="64" id="OHc-Zf-9s2"/>
+                                    <constraint firstAttribute="width" constant="59" id="ghe-Gx-voS"/>
+                                </constraints>
+                                <state key="normal" title="读取"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ghe-Gx-voS"/>
+                                        <exclude reference="Ih8-AW-gED"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="read:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fH-Mu-7Pf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EMe-hG-35p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Zk-xX-4u9"/>
+                            <constraint firstItem="EMe-hG-35p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="9vQ-6n-Zlj"/>
+                            <constraint firstItem="Gzb-ag-hXT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiN-IH-RT7"/>
+                            <constraint firstItem="Gzb-ag-hXT" firstAttribute="top" secondItem="EMe-hG-35p" secondAttribute="bottom" constant="100" id="VRk-0Q-DAV"/>
+                            <constraint firstItem="EMe-hG-35p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7C-cx-G9P"/>
+                            <constraint firstItem="EMe-hG-35p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ivX-a6-Iqs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Zk-xX-4u9"/>
+                                <exclude reference="ivX-a6-Iqs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="387"/>
+        </scene>
+    </scenes>
+</document>

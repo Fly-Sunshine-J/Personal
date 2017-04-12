@@ -1,0 +1,24 @@
+//
+//  ComicCell.swift
+//  ComicAndPicture
+//
+//  Created by vcyber on 16/11/4.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+import UIKit
+
+class ComicCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}

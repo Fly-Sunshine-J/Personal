@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D723E18A1CEF0E3D0003EF55 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D723E1891CEF0E3D0003EF55 /* libstdc++.6.0.9.tbd */; };
+		D761A1561CEEFFAB0075F7D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D761A1551CEEFFAB0075F7D4 /* main.m */; };
+		D761A1591CEEFFAB0075F7D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D761A1581CEEFFAB0075F7D4 /* AppDelegate.m */; };
+		D761A15C1CEEFFAB0075F7D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D761A15B1CEEFFAB0075F7D4 /* ViewController.m */; };
+		D761A15F1CEEFFAB0075F7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D761A15D1CEEFFAB0075F7D4 /* Main.storyboard */; };
+		D761A1611CEEFFAB0075F7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D761A1601CEEFFAB0075F7D4 /* Assets.xcassets */; };
+		D761A1641CEEFFAB0075F7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D761A1621CEEFFAB0075F7D4 /* LaunchScreen.storyboard */; };
+		D761A16F1CEEFFAB0075F7D4 /* ZXingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D761A16E1CEEFFAB0075F7D4 /* ZXingTests.m */; };
+		D761A17A1CEEFFAB0075F7D4 /* ZXingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D761A1791CEEFFAB0075F7D4 /* ZXingUITests.m */; };
+		D761A1A61CEF01180075F7D4 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1A41CEF01180075F7D4 /* libZXingWidget.a */; };
+		D761A1A71CEF01180075F7D4 /* ZXingWidgetBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D761A1A51CEF01180075F7D4 /* ZXingWidgetBundle.bundle */; };
+		D761A1A91CEF01EE0075F7D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1A81CEF01EE0075F7D4 /* AudioToolbox.framework */; };
+		D761A1AB1CEF01F70075F7D4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1AA1CEF01F70075F7D4 /* CoreVideo.framework */; };
+		D761A1AD1CEF01FE0075F7D4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1AC1CEF01FE0075F7D4 /* CoreMedia.framework */; };
+		D761A1AF1CEF02080075F7D4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1AE1CEF02080075F7D4 /* libiconv.tbd */; };
+		D761A1B21CEF02130075F7D4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1B01CEF02130075F7D4 /* AddressBook.framework */; };
+		D761A1B31CEF02130075F7D4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1B11CEF02130075F7D4 /* AddressBookUI.framework */; };
+		D761A1B51CEF083E0075F7D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A1B41CEF083E0075F7D4 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D761A16B1CEEFFAB0075F7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D761A1491CEEFFAB0075F7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D761A1501CEEFFAB0075F7D4;
+			remoteInfo = ZXing;
+		};
+		D761A1761CEEFFAB0075F7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D761A1491CEEFFAB0075F7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D761A1501CEEFFAB0075F7D4;
+			remoteInfo = ZXing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D723E1891CEF0E3D0003EF55 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		D761A1511CEEFFAB0075F7D4 /* ZXing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D761A1551CEEFFAB0075F7D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D761A1571CEEFFAB0075F7D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D761A1581CEEFFAB0075F7D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D761A15A1CEEFFAB0075F7D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D761A15B1CEEFFAB0075F7D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D761A15E1CEEFFAB0075F7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D761A1601CEEFFAB0075F7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D761A1631CEEFFAB0075F7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D761A1651CEEFFAB0075F7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D761A16A1CEEFFAB0075F7D4 /* ZXingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D761A16E1CEEFFAB0075F7D4 /* ZXingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXingTests.m; sourceTree = "<group>"; };
+		D761A1701CEEFFAB0075F7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D761A1751CEEFFAB0075F7D4 /* ZXingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D761A1791CEEFFAB0075F7D4 /* ZXingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXingUITests.m; sourceTree = "<group>"; };
+		D761A17B1CEEFFAB0075F7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D761A1991CEF01180075F7D4 /* AztecReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AztecReader.h; sourceTree = "<group>"; };
+		D761A19A1CEF01180075F7D4 /* DataMatrixReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMatrixReader.h; sourceTree = "<group>"; };
+		D761A19B1CEF01180075F7D4 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		D761A19C1CEF01180075F7D4 /* DecoderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoderDelegate.h; sourceTree = "<group>"; };
+		D761A19D1CEF01180075F7D4 /* FormatReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatReader.h; sourceTree = "<group>"; };
+		D761A19E1CEF01180075F7D4 /* MultiFormatOneDReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFormatOneDReader.h; sourceTree = "<group>"; };
+		D761A19F1CEF01180075F7D4 /* MultiFormatUPCEANReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFormatUPCEANReader.h; sourceTree = "<group>"; };
+		D761A1A01CEF01180075F7D4 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		D761A1A11CEF01180075F7D4 /* ParsedResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsedResult.h; sourceTree = "<group>"; };
+		D761A1A21CEF01180075F7D4 /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		D761A1A31CEF01180075F7D4 /* ZXingWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXingWidgetController.h; sourceTree = "<group>"; };
+		D761A1A41CEF01180075F7D4 /* libZXingWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZXingWidget.a; sourceTree = "<group>"; };
+		D761A1A51CEF01180075F7D4 /* ZXingWidgetBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZXingWidgetBundle.bundle; sourceTree = "<group>"; };
+		D761A1A81CEF01EE0075F7D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D761A1AA1CEF01F70075F7D4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D761A1AC1CEF01FE0075F7D4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D761A1AE1CEF02080075F7D4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D761A1B01CEF02130075F7D4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D761A1B11CEF02130075F7D4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D761A1B41CEF083E0075F7D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D761A1B61CEF088A0075F7D4 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D761A1B81CEF09A80075F7D4 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D761A14E1CEEFFAB0075F7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D723E18A1CEF0E3D0003EF55 /* libstdc++.6.0.9.tbd in Frameworks */,
+				D761A1B51CEF083E0075F7D4 /* AVFoundation.framework in Frameworks */,
+				D761A1B21CEF02130075F7D4 /* AddressBook.framework in Frameworks */,
+				D761A1B31CEF02130075F7D4 /* AddressBookUI.framework in Frameworks */,
+				D761A1AF1CEF02080075F7D4 /* libiconv.tbd in Frameworks */,
+				D761A1AD1CEF01FE0075F7D4 /* CoreMedia.framework in Frameworks */,
+				D761A1AB1CEF01F70075F7D4 /* CoreVideo.framework in Frameworks */,
+				D761A1A91CEF01EE0075F7D4 /* AudioToolbox.framework in Frameworks */,
+				D761A1A61CEF01180075F7D4 /* libZXingWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1671CEEFFAB0075F7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1721CEEFFAB0075F7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D761A1481CEEFFAB0075F7D4 = {
+			isa = PBXGroup;
+			children = (
+				D723E1891CEF0E3D0003EF55 /* libstdc++.6.0.9.tbd */,
+				D761A1B81CEF09A80075F7D4 /* libz.1.2.5.tbd */,
+				D761A1B61CEF088A0075F7D4 /* libstdc++.tbd */,
+				D761A1B41CEF083E0075F7D4 /* AVFoundation.framework */,
+				D761A1B01CEF02130075F7D4 /* AddressBook.framework */,
+				D761A1B11CEF02130075F7D4 /* AddressBookUI.framework */,
+				D761A1AE1CEF02080075F7D4 /* libiconv.tbd */,
+				D761A1AC1CEF01FE0075F7D4 /* CoreMedia.framework */,
+				D761A1AA1CEF01F70075F7D4 /* CoreVideo.framework */,
+				D761A1A81CEF01EE0075F7D4 /* AudioToolbox.framework */,
+				D761A1531CEEFFAB0075F7D4 /* ZXing */,
+				D761A16D1CEEFFAB0075F7D4 /* ZXingTests */,
+				D761A1781CEEFFAB0075F7D4 /* ZXingUITests */,
+				D761A1521CEEFFAB0075F7D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D761A1521CEEFFAB0075F7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1511CEEFFAB0075F7D4 /* ZXing.app */,
+				D761A16A1CEEFFAB0075F7D4 /* ZXingTests.xctest */,
+				D761A1751CEEFFAB0075F7D4 /* ZXingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D761A1531CEEFFAB0075F7D4 /* ZXing */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1571CEEFFAB0075F7D4 /* AppDelegate.h */,
+				D761A1581CEEFFAB0075F7D4 /* AppDelegate.m */,
+				D761A15A1CEEFFAB0075F7D4 /* ViewController.h */,
+				D761A15B1CEEFFAB0075F7D4 /* ViewController.m */,
+				D761A1971CEF01180075F7D4 /* libZXingWidget */,
+				D761A15D1CEEFFAB0075F7D4 /* Main.storyboard */,
+				D761A1601CEEFFAB0075F7D4 /* Assets.xcassets */,
+				D761A1621CEEFFAB0075F7D4 /* LaunchScreen.storyboard */,
+				D761A1651CEEFFAB0075F7D4 /* Info.plist */,
+				D761A1541CEEFFAB0075F7D4 /* Supporting Files */,
+			);
+			path = ZXing;
+			sourceTree = "<group>";
+		};
+		D761A1541CEEFFAB0075F7D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1551CEEFFAB0075F7D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D761A16D1CEEFFAB0075F7D4 /* ZXingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D761A16E1CEEFFAB0075F7D4 /* ZXingTests.m */,
+				D761A1701CEEFFAB0075F7D4 /* Info.plist */,
+			);
+			path = ZXingTests;
+			sourceTree = "<group>";
+		};
+		D761A1781CEEFFAB0075F7D4 /* ZXingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1791CEEFFAB0075F7D4 /* ZXingUITests.m */,
+				D761A17B1CEEFFAB0075F7D4 /* Info.plist */,
+			);
+			path = ZXingUITests;
+			sourceTree = "<group>";
+		};
+		D761A1971CEF01180075F7D4 /* libZXingWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1981CEF01180075F7D4 /* include */,
+				D761A1A41CEF01180075F7D4 /* libZXingWidget.a */,
+				D761A1A51CEF01180075F7D4 /* ZXingWidgetBundle.bundle */,
+			);
+			path = libZXingWidget;
+			sourceTree = "<group>";
+		};
+		D761A1981CEF01180075F7D4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D761A1991CEF01180075F7D4 /* AztecReader.h */,
+				D761A19A1CEF01180075F7D4 /* DataMatrixReader.h */,
+				D761A19B1CEF01180075F7D4 /* Decoder.h */,
+				D761A19C1CEF01180075F7D4 /* DecoderDelegate.h */,
+				D761A19D1CEF01180075F7D4 /* FormatReader.h */,
+				D761A19E1CEF01180075F7D4 /* MultiFormatOneDReader.h */,
+				D761A19F1CEF01180075F7D4 /* MultiFormatUPCEANReader.h */,
+				D761A1A01CEF01180075F7D4 /* OverlayView.h */,
+				D761A1A11CEF01180075F7D4 /* ParsedResult.h */,
+				D761A1A21CEF01180075F7D4 /* QRCodeReader.h */,
+				D761A1A31CEF01180075F7D4 /* ZXingWidgetController.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D761A1501CEEFFAB0075F7D4 /* ZXing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D761A17E1CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXing" */;
+			buildPhases = (
+				D761A14D1CEEFFAB0075F7D4 /* Sources */,
+				D761A14E1CEEFFAB0075F7D4 /* Frameworks */,
+				D761A14F1CEEFFAB0075F7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXing;
+			productName = ZXing;
+			productReference = D761A1511CEEFFAB0075F7D4 /* ZXing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D761A1691CEEFFAB0075F7D4 /* ZXingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D761A1811CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXingTests" */;
+			buildPhases = (
+				D761A1661CEEFFAB0075F7D4 /* Sources */,
+				D761A1671CEEFFAB0075F7D4 /* Frameworks */,
+				D761A1681CEEFFAB0075F7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D761A16C1CEEFFAB0075F7D4 /* PBXTargetDependency */,
+			);
+			name = ZXingTests;
+			productName = ZXingTests;
+			productReference = D761A16A1CEEFFAB0075F7D4 /* ZXingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D761A1741CEEFFAB0075F7D4 /* ZXingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D761A1841CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXingUITests" */;
+			buildPhases = (
+				D761A1711CEEFFAB0075F7D4 /* Sources */,
+				D761A1721CEEFFAB0075F7D4 /* Frameworks */,
+				D761A1731CEEFFAB0075F7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D761A1771CEEFFAB0075F7D4 /* PBXTargetDependency */,
+			);
+			name = ZXingUITests;
+			productName = ZXingUITests;
+			productReference = D761A1751CEEFFAB0075F7D4 /* ZXingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D761A1491CEEFFAB0075F7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = vcyber;
+				TargetAttributes = {
+					D761A1501CEEFFAB0075F7D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+					};
+					D761A1691CEEFFAB0075F7D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D761A1501CEEFFAB0075F7D4;
+					};
+					D761A1741CEEFFAB0075F7D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D761A1501CEEFFAB0075F7D4;
+					};
+				};
+			};
+			buildConfigurationList = D761A14C1CEEFFAB0075F7D4 /* Build configuration list for PBXProject "ZXing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D761A1481CEEFFAB0075F7D4;
+			productRefGroup = D761A1521CEEFFAB0075F7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D761A1501CEEFFAB0075F7D4 /* ZXing */,
+				D761A1691CEEFFAB0075F7D4 /* ZXingTests */,
+				D761A1741CEEFFAB0075F7D4 /* ZXingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D761A14F1CEEFFAB0075F7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D761A1641CEEFFAB0075F7D4 /* LaunchScreen.storyboard in Resources */,
+				D761A1611CEEFFAB0075F7D4 /* Assets.xcassets in Resources */,
+				D761A1A71CEF01180075F7D4 /* ZXingWidgetBundle.bundle in Resources */,
+				D761A15F1CEEFFAB0075F7D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1681CEEFFAB0075F7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1731CEEFFAB0075F7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D761A14D1CEEFFAB0075F7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D761A15C1CEEFFAB0075F7D4 /* ViewController.m in Sources */,
+				D761A1591CEEFFAB0075F7D4 /* AppDelegate.m in Sources */,
+				D761A1561CEEFFAB0075F7D4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1661CEEFFAB0075F7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D761A16F1CEEFFAB0075F7D4 /* ZXingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D761A1711CEEFFAB0075F7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D761A17A1CEEFFAB0075F7D4 /* ZXingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D761A16C1CEEFFAB0075F7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D761A1501CEEFFAB0075F7D4 /* ZXing */;
+			targetProxy = D761A16B1CEEFFAB0075F7D4 /* PBXContainerItemProxy */;
+		};
+		D761A1771CEEFFAB0075F7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D761A1501CEEFFAB0075F7D4 /* ZXing */;
+			targetProxy = D761A1761CEEFFAB0075F7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D761A15D1CEEFFAB0075F7D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D761A15E1CEEFFAB0075F7D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D761A1621CEEFFAB0075F7D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D761A1631CEEFFAB0075F7D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D761A17C1CEEFFAB0075F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D761A17D1CEEFFAB0075F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D761A17F1CEEFFAB0075F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ZXing/ZXing/libZXingWidget/include/**";
+				INFOPLIST_FILE = ZXing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZXing",
+					"$(PROJECT_DIR)/ZXing/libZXingWidget",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		D761A1801CEEFFAB0075F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ZXing/ZXing/libZXingWidget/include/**";
+				INFOPLIST_FILE = ZXing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZXing",
+					"$(PROJECT_DIR)/ZXing/libZXingWidget",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		D761A1821CEEFFAB0075F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXing.app/ZXing";
+			};
+			name = Debug;
+		};
+		D761A1831CEEFFAB0075F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXing.app/ZXing";
+			};
+			name = Release;
+		};
+		D761A1851CEEFFAB0075F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXing;
+			};
+			name = Debug;
+		};
+		D761A1861CEEFFAB0075F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fly-Sunshine-J.ZXingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D761A14C1CEEFFAB0075F7D4 /* Build configuration list for PBXProject "ZXing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D761A17C1CEEFFAB0075F7D4 /* Debug */,
+				D761A17D1CEEFFAB0075F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D761A17E1CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D761A17F1CEEFFAB0075F7D4 /* Debug */,
+				D761A1801CEEFFAB0075F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D761A1811CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D761A1821CEEFFAB0075F7D4 /* Debug */,
+				D761A1831CEEFFAB0075F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D761A1841CEEFFAB0075F7D4 /* Build configuration list for PBXNativeTarget "ZXingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D761A1851CEEFFAB0075F7D4 /* Debug */,
+				D761A1861CEEFFAB0075F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D761A1491CEEFFAB0075F7D4 /* Project object */;
+}

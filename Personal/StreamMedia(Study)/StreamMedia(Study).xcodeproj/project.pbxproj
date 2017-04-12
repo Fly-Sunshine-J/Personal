@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D71053A01CE062550062D67B /* JFYCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D710539F1CE062550062D67B /* JFYCameraController.m */; };
+		D7195ADB1CEC4AD9009DD16A /* JFYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7195ADA1CEC4AD9009DD16A /* JFYTableViewController.m */; };
+		D76170631CE2DD7000B59B73 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D76170621CE2DD7000B59B73 /* FXBlurView.m */; };
+		D76170691CE2E24100B59B73 /* JFYViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D76170681CE2E24100B59B73 /* JFYViewTest.m */; };
+		D761A0541CEEE8FC0075F7D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A0531CEEE8FC0075F7D4 /* AVFoundation.framework */; };
+		D761A0561CEEE9130075F7D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A0551CEEE9130075F7D4 /* AudioToolbox.framework */; };
+		D761A0581CEEE91F0075F7D4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A0571CEEE91F0075F7D4 /* CoreVideo.framework */; };
+		D761A05A1CEEE92A0075F7D4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A0591CEEE92A0075F7D4 /* CoreMedia.framework */; };
+		D761A05C1CEEE9370075F7D4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A05B1CEEE9370075F7D4 /* libiconv.tbd */; };
+		D761A05E1CEEE9430075F7D4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A05D1CEEE9430075F7D4 /* AddressBook.framework */; };
+		D761A0601CEEE94D0075F7D4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761A05F1CEEE94D0075F7D4 /* AddressBookUI.framework */; };
+		D76F1EA21CD9E2C900B18BD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EA11CD9E2C900B18BD9 /* main.m */; };
+		D76F1EA51CD9E2C900B18BD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EA41CD9E2C900B18BD9 /* AppDelegate.m */; };
+		D76F1EA81CD9E2C900B18BD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EA71CD9E2C900B18BD9 /* ViewController.m */; };
+		D76F1EAB1CD9E2C900B18BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76F1EA91CD9E2C900B18BD9 /* Main.storyboard */; };
+		D76F1EAD1CD9E2C900B18BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76F1EAC1CD9E2C900B18BD9 /* Assets.xcassets */; };
+		D76F1EB01CD9E2C900B18BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76F1EAE1CD9E2C900B18BD9 /* LaunchScreen.storyboard */; };
+		D76F1EBB1CD9E2C900B18BD9 /* StreamMedia_Study_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EBA1CD9E2C900B18BD9 /* StreamMedia_Study_Tests.m */; };
+		D76F1EC61CD9E2C900B18BD9 /* StreamMedia_Study_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EC51CD9E2C900B18BD9 /* StreamMedia_Study_UITests.m */; };
+		D76F1ED61CD9E3D300B18BD9 /* JFYSoundEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = D76F1ED51CD9E3D300B18BD9 /* JFYSoundEffect.mm */; };
+		D76F1ED81CD9E54000B18BD9 /* vcyber_harp.wav in Resources */ = {isa = PBXBuildFile; fileRef = D76F1ED71CD9E54000B18BD9 /* vcyber_harp.wav */; };
+		D76F1EDC1CD9F10900B18BD9 /* VMAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EDB1CD9F10900B18BD9 /* VMAudioPlayer.m */; };
+		D76F1EDF1CD9F7BF00B18BD9 /* JFYMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EDE1CD9F7BF00B18BD9 /* JFYMusicModel.m */; };
+		D76F1EE11CD9F84000B18BD9 /* 庄心妍-以后的以后.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76F1EE01CD9F84000B18BD9 /* 庄心妍-以后的以后.mp3 */; };
+		D76F1EE51CDAE28D00B18BD9 /* JFYRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = D76F1EE41CDAE28D00B18BD9 /* JFYRecordController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D76F1EB71CD9E2C900B18BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76F1E951CD9E2C900B18BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76F1E9C1CD9E2C900B18BD9;
+			remoteInfo = "StreamMedia(Study)";
+		};
+		D76F1EC21CD9E2C900B18BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76F1E951CD9E2C900B18BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76F1E9C1CD9E2C900B18BD9;
+			remoteInfo = "StreamMedia(Study)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D710539E1CE062550062D67B /* JFYCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFYCameraController.h; sourceTree = "<group>"; };
+		D710539F1CE062550062D67B /* JFYCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFYCameraController.m; sourceTree = "<group>"; };
+		D7195AD91CEC4AD9009DD16A /* JFYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFYTableViewController.h; path = "StreamMedia(Study)/JFYTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		D7195ADA1CEC4AD9009DD16A /* JFYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFYTableViewController.m; path = "StreamMedia(Study)/JFYTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		D76170611CE2DD7000B59B73 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		D76170621CE2DD7000B59B73 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		D76170671CE2E24100B59B73 /* JFYViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFYViewTest.h; sourceTree = "<group>"; };
+		D76170681CE2E24100B59B73 /* JFYViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFYViewTest.m; sourceTree = "<group>"; };
+		D761A0531CEEE8FC0075F7D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D761A0551CEEE9130075F7D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D761A0571CEEE91F0075F7D4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D761A0591CEEE92A0075F7D4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D761A05B1CEEE9370075F7D4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D761A05D1CEEE9430075F7D4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D761A05F1CEEE94D0075F7D4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D76F1E9D1CD9E2C900B18BD9 /* StreamMedia(Study).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamMedia(Study).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F1EA11CD9E2C900B18BD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D76F1EA31CD9E2C900B18BD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D76F1EA41CD9E2C900B18BD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D76F1EA61CD9E2C900B18BD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D76F1EA71CD9E2C900B18BD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D76F1EAA1CD9E2C900B18BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D76F1EAC1CD9E2C900B18BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76F1EAF1CD9E2C900B18BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D76F1EB11CD9E2C900B18BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76F1EB61CD9E2C900B18BD9 /* StreamMedia(Study)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamMedia(Study)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F1EBA1CD9E2C900B18BD9 /* StreamMedia_Study_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamMedia_Study_Tests.m; sourceTree = "<group>"; };
+		D76F1EBC1CD9E2C900B18BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76F1EC11CD9E2C900B18BD9 /* StreamMedia(Study)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamMedia(Study)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F1EC51CD9E2C900B18BD9 /* StreamMedia_Study_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamMedia_Study_UITests.m; sourceTree = "<group>"; };
+		D76F1EC71CD9E2C900B18BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76F1ED41CD9E3D300B18BD9 /* JFYSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFYSoundEffect.h; sourceTree = "<group>"; };
+		D76F1ED51CD9E3D300B18BD9 /* JFYSoundEffect.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JFYSoundEffect.mm; sourceTree = "<group>"; };
+		D76F1ED71CD9E54000B18BD9 /* vcyber_harp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vcyber_harp.wav; sourceTree = "<group>"; };
+		D76F1EDA1CD9F10900B18BD9 /* VMAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAudioPlayer.h; sourceTree = "<group>"; };
+		D76F1EDB1CD9F10900B18BD9 /* VMAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMAudioPlayer.m; sourceTree = "<group>"; };
+		D76F1EDD1CD9F7BF00B18BD9 /* JFYMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFYMusicModel.h; sourceTree = "<group>"; };
+		D76F1EDE1CD9F7BF00B18BD9 /* JFYMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFYMusicModel.m; sourceTree = "<group>"; };
+		D76F1EE01CD9F84000B18BD9 /* 庄心妍-以后的以后.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "庄心妍-以后的以后.mp3"; path = "音乐/庄心妍-以后的以后.mp3"; sourceTree = "<group>"; };
+		D76F1EE31CDAE28D00B18BD9 /* JFYRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFYRecordController.h; sourceTree = "<group>"; };
+		D76F1EE41CDAE28D00B18BD9 /* JFYRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFYRecordController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76F1E9A1CD9E2C900B18BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D761A0601CEEE94D0075F7D4 /* AddressBookUI.framework in Frameworks */,
+				D761A05E1CEEE9430075F7D4 /* AddressBook.framework in Frameworks */,
+				D761A05C1CEEE9370075F7D4 /* libiconv.tbd in Frameworks */,
+				D761A05A1CEEE92A0075F7D4 /* CoreMedia.framework in Frameworks */,
+				D761A0581CEEE91F0075F7D4 /* CoreVideo.framework in Frameworks */,
+				D761A0561CEEE9130075F7D4 /* AudioToolbox.framework in Frameworks */,
+				D761A0541CEEE8FC0075F7D4 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EB31CD9E2C900B18BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EBE1CD9E2C900B18BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D710539D1CE062110062D67B /* 照片 */ = {
+			isa = PBXGroup;
+			children = (
+				D710539E1CE062550062D67B /* JFYCameraController.h */,
+				D710539F1CE062550062D67B /* JFYCameraController.m */,
+				D76170671CE2E24100B59B73 /* JFYViewTest.h */,
+				D76170681CE2E24100B59B73 /* JFYViewTest.m */,
+				D7195AD91CEC4AD9009DD16A /* JFYTableViewController.h */,
+				D7195ADA1CEC4AD9009DD16A /* JFYTableViewController.m */,
+			);
+			path = "照片";
+			sourceTree = "<group>";
+		};
+		D76170601CE2DD7000B59B73 /* 高斯模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				D76170611CE2DD7000B59B73 /* FXBlurView.h */,
+				D76170621CE2DD7000B59B73 /* FXBlurView.m */,
+			);
+			path = "高斯模糊";
+			sourceTree = "<group>";
+		};
+		D76F1E941CD9E2C900B18BD9 = {
+			isa = PBXGroup;
+			children = (
+				D761A05F1CEEE94D0075F7D4 /* AddressBookUI.framework */,
+				D761A05D1CEEE9430075F7D4 /* AddressBook.framework */,
+				D761A05B1CEEE9370075F7D4 /* libiconv.tbd */,
+				D761A0591CEEE92A0075F7D4 /* CoreMedia.framework */,
+				D761A0571CEEE91F0075F7D4 /* CoreVideo.framework */,
+				D761A0551CEEE9130075F7D4 /* AudioToolbox.framework */,
+				D761A0531CEEE8FC0075F7D4 /* AVFoundation.framework */,
+				D76F1E9F1CD9E2C900B18BD9 /* StreamMedia(Study) */,
+				D76F1EB91CD9E2C900B18BD9 /* StreamMedia(Study)Tests */,
+				D76F1EC41CD9E2C900B18BD9 /* StreamMedia(Study)UITests */,
+				D76F1E9E1CD9E2C900B18BD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D76F1E9E1CD9E2C900B18BD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1E9D1CD9E2C900B18BD9 /* StreamMedia(Study).app */,
+				D76F1EB61CD9E2C900B18BD9 /* StreamMedia(Study)Tests.xctest */,
+				D76F1EC11CD9E2C900B18BD9 /* StreamMedia(Study)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76F1E9F1CD9E2C900B18BD9 /* StreamMedia(Study) */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EE01CD9F84000B18BD9 /* 庄心妍-以后的以后.mp3 */,
+				D76F1ED31CD9E34900B18BD9 /* 短音频(30s) */,
+				D76F1ED91CD9F10900B18BD9 /* 音乐 */,
+				D76F1EE21CDAE25500B18BD9 /* 录音 */,
+				D710539D1CE062110062D67B /* 照片 */,
+				D76F1EA31CD9E2C900B18BD9 /* AppDelegate.h */,
+				D76F1EA41CD9E2C900B18BD9 /* AppDelegate.m */,
+				D76F1EA61CD9E2C900B18BD9 /* ViewController.h */,
+				D76F1EA71CD9E2C900B18BD9 /* ViewController.m */,
+				D76F1EA91CD9E2C900B18BD9 /* Main.storyboard */,
+				D76F1EAC1CD9E2C900B18BD9 /* Assets.xcassets */,
+				D76F1EAE1CD9E2C900B18BD9 /* LaunchScreen.storyboard */,
+				D76F1EB11CD9E2C900B18BD9 /* Info.plist */,
+				D76170601CE2DD7000B59B73 /* 高斯模糊 */,
+				D76F1EA01CD9E2C900B18BD9 /* Supporting Files */,
+			);
+			path = "StreamMedia(Study)";
+			sourceTree = "<group>";
+		};
+		D76F1EA01CD9E2C900B18BD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EA11CD9E2C900B18BD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D76F1EB91CD9E2C900B18BD9 /* StreamMedia(Study)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EBA1CD9E2C900B18BD9 /* StreamMedia_Study_Tests.m */,
+				D76F1EBC1CD9E2C900B18BD9 /* Info.plist */,
+			);
+			path = "StreamMedia(Study)Tests";
+			sourceTree = "<group>";
+		};
+		D76F1EC41CD9E2C900B18BD9 /* StreamMedia(Study)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EC51CD9E2C900B18BD9 /* StreamMedia_Study_UITests.m */,
+				D76F1EC71CD9E2C900B18BD9 /* Info.plist */,
+			);
+			path = "StreamMedia(Study)UITests";
+			sourceTree = "<group>";
+		};
+		D76F1ED31CD9E34900B18BD9 /* 短音频(30s) */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1ED71CD9E54000B18BD9 /* vcyber_harp.wav */,
+				D76F1ED41CD9E3D300B18BD9 /* JFYSoundEffect.h */,
+				D76F1ED51CD9E3D300B18BD9 /* JFYSoundEffect.mm */,
+			);
+			path = "短音频(30s)";
+			sourceTree = "<group>";
+		};
+		D76F1ED91CD9F10900B18BD9 /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EDA1CD9F10900B18BD9 /* VMAudioPlayer.h */,
+				D76F1EDB1CD9F10900B18BD9 /* VMAudioPlayer.m */,
+				D76F1EDD1CD9F7BF00B18BD9 /* JFYMusicModel.h */,
+				D76F1EDE1CD9F7BF00B18BD9 /* JFYMusicModel.m */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		D76F1EE21CDAE25500B18BD9 /* 录音 */ = {
+			isa = PBXGroup;
+			children = (
+				D76F1EE31CDAE28D00B18BD9 /* JFYRecordController.h */,
+				D76F1EE41CDAE28D00B18BD9 /* JFYRecordController.m */,
+			);
+			path = "录音";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D76F1E9C1CD9E2C900B18BD9 /* StreamMedia(Study) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F1ECA1CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)" */;
+			buildPhases = (
+				D76F1E991CD9E2C900B18BD9 /* Sources */,
+				D76F1E9A1CD9E2C900B18BD9 /* Frameworks */,
+				D76F1E9B1CD9E2C900B18BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StreamMedia(Study)";
+			productName = "StreamMedia(Study)";
+			productReference = D76F1E9D1CD9E2C900B18BD9 /* StreamMedia(Study).app */;
+			productType = "com.apple.product-type.application";
+		};
+		D76F1EB51CD9E2C900B18BD9 /* StreamMedia(Study)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F1ECD1CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)Tests" */;
+			buildPhases = (
+				D76F1EB21CD9E2C900B18BD9 /* Sources */,
+				D76F1EB31CD9E2C900B18BD9 /* Frameworks */,
+				D76F1EB41CD9E2C900B18BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76F1EB81CD9E2C900B18BD9 /* PBXTargetDependency */,
+			);
+			name = "StreamMedia(Study)Tests";
+			productName = "StreamMedia(Study)Tests";
+			productReference = D76F1EB61CD9E2C900B18BD9 /* StreamMedia(Study)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D76F1EC01CD9E2C900B18BD9 /* StreamMedia(Study)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F1ED01CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)UITests" */;
+			buildPhases = (
+				D76F1EBD1CD9E2C900B18BD9 /* Sources */,
+				D76F1EBE1CD9E2C900B18BD9 /* Frameworks */,
+				D76F1EBF1CD9E2C900B18BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76F1EC31CD9E2C900B18BD9 /* PBXTargetDependency */,
+			);
+			name = "StreamMedia(Study)UITests";
+			productName = "StreamMedia(Study)UITests";
+			productReference = D76F1EC11CD9E2C900B18BD9 /* StreamMedia(Study)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D76F1E951CD9E2C900B18BD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JFY;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = vcyber;
+				TargetAttributes = {
+					D76F1E9C1CD9E2C900B18BD9 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					D76F1EB51CD9E2C900B18BD9 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D76F1E9C1CD9E2C900B18BD9;
+					};
+					D76F1EC01CD9E2C900B18BD9 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E6QGCL2NKG;
+						TestTargetID = D76F1E9C1CD9E2C900B18BD9;
+					};
+				};
+			};
+			buildConfigurationList = D76F1E981CD9E2C900B18BD9 /* Build configuration list for PBXProject "StreamMedia(Study)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D76F1E941CD9E2C900B18BD9;
+			productRefGroup = D76F1E9E1CD9E2C900B18BD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76F1E9C1CD9E2C900B18BD9 /* StreamMedia(Study) */,
+				D76F1EB51CD9E2C900B18BD9 /* StreamMedia(Study)Tests */,
+				D76F1EC01CD9E2C900B18BD9 /* StreamMedia(Study)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D76F1E9B1CD9E2C900B18BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F1ED81CD9E54000B18BD9 /* vcyber_harp.wav in Resources */,
+				D76F1EB01CD9E2C900B18BD9 /* LaunchScreen.storyboard in Resources */,
+				D76F1EAD1CD9E2C900B18BD9 /* Assets.xcassets in Resources */,
+				D76F1EAB1CD9E2C900B18BD9 /* Main.storyboard in Resources */,
+				D76F1EE11CD9F84000B18BD9 /* 庄心妍-以后的以后.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EB41CD9E2C900B18BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EBF1CD9E2C900B18BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76F1E991CD9E2C900B18BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F1EA81CD9E2C900B18BD9 /* ViewController.m in Sources */,
+				D7195ADB1CEC4AD9009DD16A /* JFYTableViewController.m in Sources */,
+				D76F1EDF1CD9F7BF00B18BD9 /* JFYMusicModel.m in Sources */,
+				D76F1EA51CD9E2C900B18BD9 /* AppDelegate.m in Sources */,
+				D76F1ED61CD9E3D300B18BD9 /* JFYSoundEffect.mm in Sources */,
+				D76170691CE2E24100B59B73 /* JFYViewTest.m in Sources */,
+				D76F1EE51CDAE28D00B18BD9 /* JFYRecordController.m in Sources */,
+				D76F1EDC1CD9F10900B18BD9 /* VMAudioPlayer.m in Sources */,
+				D76F1EA21CD9E2C900B18BD9 /* main.m in Sources */,
+				D71053A01CE062550062D67B /* JFYCameraController.m in Sources */,
+				D76170631CE2DD7000B59B73 /* FXBlurView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EB21CD9E2C900B18BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F1EBB1CD9E2C900B18BD9 /* StreamMedia_Study_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F1EBD1CD9E2C900B18BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F1EC61CD9E2C900B18BD9 /* StreamMedia_Study_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D76F1EB81CD9E2C900B18BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76F1E9C1CD9E2C900B18BD9 /* StreamMedia(Study) */;
+			targetProxy = D76F1EB71CD9E2C900B18BD9 /* PBXContainerItemProxy */;
+		};
+		D76F1EC31CD9E2C900B18BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76F1E9C1CD9E2C900B18BD9 /* StreamMedia(Study) */;
+			targetProxy = D76F1EC21CD9E2C900B18BD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D76F1EA91CD9E2C900B18BD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76F1EAA1CD9E2C900B18BD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D76F1EAE1CD9E2C900B18BD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76F1EAF1CD9E2C900B18BD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D76F1EC81CD9E2C900B18BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D76F1EC91CD9E2C900B18BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D76F1ECB1CD9E2C900B18BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/StreamMedia(Study)",
+					../zxing/cpp/core/src,
+					"../zxing/iphone/ZXingWidget/Classes/**",
+				);
+				INFOPLIST_FILE = "StreamMedia(Study)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StreamMedia(Study)/libZXingWidget",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jiafeiyao.AudioStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D76F1ECC1CD9E2C900B18BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/StreamMedia(Study)",
+					../zxing/cpp/core/src,
+					"../zxing/iphone/ZXingWidget/Classes/**",
+				);
+				INFOPLIST_FILE = "StreamMedia(Study)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StreamMedia(Study)/libZXingWidget",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jiafeiyao.AudioStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D76F1ECE1CD9E2C900B18BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "StreamMedia(Study)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiafeiyao.StreamMedia-Study-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamMedia(Study).app/StreamMedia(Study)";
+			};
+			name = Debug;
+		};
+		D76F1ECF1CD9E2C900B18BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "StreamMedia(Study)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiafeiyao.StreamMedia-Study-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamMedia(Study).app/StreamMedia(Study)";
+			};
+			name = Release;
+		};
+		D76F1ED11CD9E2C900B18BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "StreamMedia(Study)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiafeiyao.StreamMedia-Study-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "StreamMedia(Study)";
+			};
+			name = Debug;
+		};
+		D76F1ED21CD9E2C900B18BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "StreamMedia(Study)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiafeiyao.StreamMedia-Study-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "StreamMedia(Study)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D76F1E981CD9E2C900B18BD9 /* Build configuration list for PBXProject "StreamMedia(Study)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F1EC81CD9E2C900B18BD9 /* Debug */,
+				D76F1EC91CD9E2C900B18BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76F1ECA1CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F1ECB1CD9E2C900B18BD9 /* Debug */,
+				D76F1ECC1CD9E2C900B18BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76F1ECD1CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F1ECE1CD9E2C900B18BD9 /* Debug */,
+				D76F1ECF1CD9E2C900B18BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76F1ED01CD9E2C900B18BD9 /* Build configuration list for PBXNativeTarget "StreamMedia(Study)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F1ED11CD9E2C900B18BD9 /* Debug */,
+				D76F1ED21CD9E2C900B18BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D76F1E951CD9E2C900B18BD9 /* Project object */;
+}

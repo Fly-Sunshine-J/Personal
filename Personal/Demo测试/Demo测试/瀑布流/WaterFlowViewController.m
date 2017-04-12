@@ -1,0 +1,140 @@
+//
+//  WaterFlowViewController.m
+//  Demo测试
+//
+//  Created by vcyber on 16/6/29.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+#import "WaterFlowViewController.h"
+#import "WaterFlowLayout.h"
+#import "WaterFlowCell.h"
+#import "GoodsModel.h"
+#import "MJRefresh.h"
+
+@interface WaterFlowViewController ()<UICollectionViewDataSource, WaterFlowLayoutDelegate>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
+@end
+
+NSString *const reuseId = @"ID";
+
+@implementation WaterFlowViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    //添加CollectionView
+    [self.view addSubview:self.collectionView];
+    
+    [self setupRefresh];
+    
+    self.SourceArray = [NSMutableArray arrayWithObjects:@[@"WaterFlowLayout.h", @"DemoSourceViewController"], @[@"WaterFlowLayout.m", @"DemoSourceViewController"], @[@"WaterFlowViewController.h", @"DemoSourceViewController"], @[@"WaterFlowViewController.m", @"DemoSourceViewController"], @[@"WaterFlowCell.h", @"DemoSourceViewController"], @[@"WaterFlowCell.m", @"DemoSourceViewController"], @[@"GoodsModel.h", @"DemoSourceViewController"], @[@"GoodsModel.m", @"DemoSourceViewController"],
+                        nil];
+}
+
+- (void)setupRefresh {
+    __weak typeof(self) weakSelf = self;
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.dataArray removeAllObjects];
+            NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"plist"]];
+            for (NSDictionary *dict in array) {
+                GoodsModel *model = [[GoodsModel alloc] initWithDict:dict];
+                [weakSelf.dataArray addObject:model];
+            }
+            [weakSelf.collectionView reloadData];
+            [weakSelf.collectionView.mj_header endRefreshing];
+            
+        });
+        
+    }];
+    
+    [self.collectionView.mj_header beginRefreshing];
+    
+    self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"plist"]];
+            for (NSDictionary *dict in array) {
+                GoodsModel *model = [[GoodsModel alloc] initWithDict:dict];
+                [weakSelf.dataArray addObject:model];
+            }
+            [weakSelf.collectionView reloadData];
+            [weakSelf.collectionView.mj_footer endRefreshing];
+            
+        });
+        
+    }];
+    self.collectionView.mj_footer.hidden = YES;
+}
+
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        //创建布局
+        WaterFlowLayout *layout = [[WaterFlowLayout alloc] init];
+        layout.delegate = self;
+        //创建collectionView
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64) collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.dataSource = self;
+        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([WaterFlowCell class]) bundle:nil] forCellWithReuseIdentifier:@"ID"];
+    }
+    
+    return _collectionView;
+}
+
+- (NSMutableArray *)dataArray {
+    
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+#pragma mark ---UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    collectionView.mj_footer.hidden = self.dataArray.count == 0;
+    return self.dataArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    WaterFlowCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ID" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor orangeColor];
+
+    cell.model = self.dataArray[indexPath.item];
+    
+    return cell;
+}
+
+#pragma mark ---WaterFlowLayoutDelegate
+- (CGFloat)WaterFlowLayout:(WaterFlowLayout *)layout heightForItemAtIndexPath:(NSIndexPath *)indexPath ItemWidth:(CGFloat)itemWidth {
+    
+    GoodsModel *model = self.dataArray[indexPath.item];
+    return itemWidth * model.h / model.w;
+}
+
+- (CGFloat)rowMarginOfWaterFlowLayout:(WaterFlowLayout *)layout {
+    return 20;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

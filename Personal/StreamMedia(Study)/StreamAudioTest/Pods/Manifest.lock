@@ -1,0 +1,21 @@
+PODS:
+  - FreeStreamer (3.1.0):
+    - Reachability (~> 3.0)
+  - Reachability (3.2)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - ZXing (2.3)
+
+DEPENDENCIES:
+  - FreeStreamer
+  - SDWebImage (~> 3.7.6)
+  - ZXing (~> 2.3)
+
+SPEC CHECKSUMS:
+  FreeStreamer: aca63018fa1ea3e4e7073bbe5e6cae84ba5416ad
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  ZXing: 2becd5a04af246acb8d4d4c627fb17a218db9074
+
+COCOAPODS: 0.39.0

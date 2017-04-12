@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/recipe/recipe",
+    "pages/qa/qa",
+    "pages/collection/collection",
+    "pages/more/more"
+  ],
+   "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(241, 82, 116)",
+    "navigationBarTitleText": "营养食谱",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/recipe/recipe",
+      "selectedIconPath":"images/store.png",
+      "iconPath":"images/cook@2x.png",
+      "text":"营养食谱"
+  },
+  {
+      "pagePath":"pages/qa/qa",
+      "selectedIconPath":"images/store.png",
+      "iconPath":"images/face@2x.png",
+      "text":"营养问答"
+  },
+  {
+      "pagePath":"pages/collection/collection",
+      "selectedIconPath":"images/store.png",
+      "iconPath":"images/love@2x.png",
+      "text":"美味收藏"
+  },
+  {
+      "pagePath":"pages/more/more",
+      "selectedIconPath":"images/store.png",
+      "iconPath":"images/slim@2x.png",
+      "text":"更多"
+  }
+  ]
+  }
+}

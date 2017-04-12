@@ -1,0 +1,32 @@
+/**index.wxss**/
+
+.page-bottom {
+  display: flex;
+  height: 200px;
+  background-color: yellow;
+  flex-direction: column;
+}
+
+.navigatorView{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background-color: blue;
+}
+
+.leftView {
+  display: block;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: purple;
+}
+.leftCell {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  /*background-color: green;*/
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

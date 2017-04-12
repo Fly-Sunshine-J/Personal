@@ -1,0 +1,4 @@
+platform:ios, '7.0'
+pod 'ZXing', '~> 2.3'
+pod 'FreeStreamer'
+pod 'SDWebImage', '~> 3.7.6'

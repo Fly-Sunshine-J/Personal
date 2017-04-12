@@ -1,0 +1,7 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++98
+CLANG_CXX_LIBRARY = libstdc++
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ZXing" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FreeStreamer" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/ZXing" ${PODS_ROOT}/ZXing/cpp/core/src/ ${PODS_ROOT}/ZXing/iphone/ZXingWidget/Classes/**
+OTHER_LDFLAGS = -l"iconv" -l"stdc++" -framework "AVFoundation" -framework "AddressBook" -framework "AddressBookUI" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreVideo" -framework "ImageIO" -framework "QuartzCore"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

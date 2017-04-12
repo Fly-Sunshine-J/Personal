@@ -1,0 +1,62 @@
+//
+//  ColorToImageViewController.m
+//  Demo测试
+//
+//  Created by vcyber on 16/6/30.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+#import "ColorToImageViewController.h"
+#import "UIColor+ColorToImage.h"
+
+@interface ColorToImageViewController ()
+
+@end
+
+@implementation ColorToImageViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor cyanColor];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1] imageWithSize:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
+    //清除导航栏下面的线条
+//    self.navigationController.navigationBar.shadowImage = nil;
+    //半透明
+    self.navigationController.navigationBar.translucent = YES;
+    //设置标题的一些属性 例如颜色 字号=
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    //清除导航栏下面的线条
+    //    self.navigationController.navigationBar.shadowImage = nil;
+    //半透明
+    self.navigationController.navigationBar.translucent = NO;
+    //设置标题的一些属性 例如颜色 字号=
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

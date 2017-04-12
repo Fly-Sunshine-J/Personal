@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+            </head>
+    <body>
+        <h1>OC和JS的交互代理方式</h1>
+        
+        <div>
+            <!-- 生成一个 button 添加点击事件-->
+            <input type="button" value="JsToOcShare" onclick="callShare()">
+                </div>
+        
+        <script>
+            function callShare() {
+                var shareContent = JSON.stringify({"title": "分享", "desc": "分享内容", "shareUrl": "http://dely.vip"});
+                iOSNative.share(shareContent);
+            }
+        <!--    OC调JS-->
+        function showAlert(message){
+            alert(message);
+        }
+        <!--    JS调OC成功后回调-->
+        var shareCallback = function(a){
+            alert('success'+a);
+        }
+        </script>
+    </body>
+</html>

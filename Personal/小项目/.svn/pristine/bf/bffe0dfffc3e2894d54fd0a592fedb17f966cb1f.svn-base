@@ -1,0 +1,90 @@
+//
+//  ComicViewController.swift
+//  ComicAndPicture
+//
+//  Created by vcyber on 16/11/4.
+//  Copyright © 2016年 vcyber. All rights reserved.
+//
+
+import UIKit
+
+class ComicViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+
+    private lazy var tableView:UITableView = {
+        let tempTableView = UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: UITableViewStyle.plain)
+        tempTableView.delegate = self
+        tempTableView.dataSource = self
+        return tempTableView
+    }()
+    
+    private lazy var dataArray:NSMutableArray = {
+        let tempArray = NSMutableArray();
+        return tempArray
+    }()
+    
+    var urlString:String?
+    var page = 1
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.addSubview(self.tableView)
+        self.getdata()
+        self.createRefresh();
+    }
+    
+    private func getdata() {
+        HTTPRequestHelp.shareInstance.GetData(urlString: (self.urlString?.appendingFormat("%d", page))!, success: { (task, object) in
+            let model:ComicModel = ComicModel(dict: object[""])
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
+        }) { (task, error) in
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
+        }
+    }
+    
+    private func createRefresh() {
+        weak var weakSelf = self
+        let header:MJRefreshGifHeader = MJRefreshGifHeader { 
+            weakSelf?.page += 1;
+            weakSelf?.getdata()
+        }
+        header.setImages([UIImage(named:"common_loading_anne_0")!, UIImage(named:"common_loading_anne_1")!], for: MJRefreshState.refreshing)
+        header.setImages([UIImage(named:"common_loading_anne_0")!, UIImage(named:"common_loading_anne_1")!], for: MJRefreshState.pulling)
+        header.setImages([UIImage(named:"common_loading_anne_0")!, UIImage(named:"common_loading_anne_1")!], for: MJRefreshState.idle)
+        
+        
+        let footer: MJRefreshAutoGifFooter = MJRefreshAutoGifFooter { 
+            weakSelf?.page -= 1
+            weakSelf?.getdata()
+        }
+        footer.setImages([UIImage(named:"common_loading_anne_0")!, UIImage(named:"common_loading_anne_1")!], for: MJRefreshState.refreshing)
+        self.tableView.mj_header = header;
+        self.tableView.mj_footer = footer;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

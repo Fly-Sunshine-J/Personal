@@ -1,0 +1,7 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++98
+CLANG_CXX_LIBRARY = libstdc++
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2 ${PODS_ROOT}/ZXing/cpp/core/src/ ${PODS_ROOT}/ZXing/iphone/ZXingWidget/Classes/** $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FreeStreamer" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/ZXing"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FreeStreamer" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/ZXing"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FreeStreamer" -l"Reachability" -l"SDWebImage" -l"ZXing" -l"iconv" -l"stdc++" -l"xml2" -framework "AVFoundation" -framework "AddressBook" -framework "AddressBookUI" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreVideo" -framework "ImageIO" -framework "MediaPlayer" -framework "QuartzCore" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

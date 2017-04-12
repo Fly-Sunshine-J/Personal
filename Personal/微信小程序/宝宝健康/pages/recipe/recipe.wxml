@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+ <loading hidden="{{!showLoading}}">
+  正在努力加载...
+ </loading>
+ <block wx:if="{{!showLoading}}">
+  <scroll-view style="height: 100%;" scroll-y="true" class="container film-list" bindscroll="scroll" bindscrolltolower="scrolltolower">
+   <block wx:for-items="{{section}}" wx:for-item="item">
+    <view class="cell" bindtap="viewDetial" data-itmes="{{item.itmes}}">
+      <image class="imageView" src="{{item.url}}"></image>
+      <text class="name">{{item.name}}</text>
+    </view>
+   </block>
+  </scroll-view>
+ </block>
+</view>
+
