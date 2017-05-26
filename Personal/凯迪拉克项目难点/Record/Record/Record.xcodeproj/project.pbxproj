@@ -196,6 +196,7 @@
 		D785BF251E1B3BCE0005F1C0 /* XZMRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D785BF161E1B3BCE0005F1C0 /* XZMRefreshConst.m */; };
 		D785BF261E1B3BCE0005F1C0 /* UIView+XZMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D785BF181E1B3BCE0005F1C0 /* UIView+XZMFrame.m */; };
 		D785BF271E1B3BCE0005F1C0 /* XZMRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D785BF1A1E1B3BCE0005F1C0 /* XZMRefresh.bundle */; };
+		D79946631EBC1B2100CB4172 /* NSString+SearchString.m in Sources */ = {isa = PBXBuildFile; fileRef = D79946621EBC1B2100CB4172 /* NSString+SearchString.m */; };
 		D7A4267E1E1F7A1400B7D0EB /* ChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A4267D1E1F7A1400B7D0EB /* ChartsModel.m */; };
 		D7A426821E1F7C3000B7D0EB /* Charts.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7A426811E1F7C3000B7D0EB /* Charts.plist */; };
 		D7A426881E1F9B0100B7D0EB /* ColorfulLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A426871E1F9B0100B7D0EB /* ColorfulLabel.m */; };
@@ -543,6 +544,8 @@
 		D785BF191E1B3BCE0005F1C0 /* XZMRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefreshConst.h; sourceTree = "<group>"; };
 		D785BF1A1E1B3BCE0005F1C0 /* XZMRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XZMRefresh.bundle; sourceTree = "<group>"; };
 		D785BF1B1E1B3BCE0005F1C0 /* XZMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMRefresh.h; sourceTree = "<group>"; };
+		D79946611EBC1B2100CB4172 /* NSString+SearchString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SearchString.h"; sourceTree = "<group>"; };
+		D79946621EBC1B2100CB4172 /* NSString+SearchString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SearchString.m"; sourceTree = "<group>"; };
 		D7A4267C1E1F7A1400B7D0EB /* ChartsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsModel.h; sourceTree = "<group>"; };
 		D7A4267D1E1F7A1400B7D0EB /* ChartsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsModel.m; sourceTree = "<group>"; };
 		D7A426811E1F7C3000B7D0EB /* Charts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Charts.plist; sourceTree = "<group>"; };
@@ -677,6 +680,8 @@
 				D72D23601E0A7CFC00B0F8D9 /* AppDelegate.m */,
 				D72D23621E0A7CFC00B0F8D9 /* ViewController.h */,
 				D72D23631E0A7CFC00B0F8D9 /* ViewController.m */,
+				D79946611EBC1B2100CB4172 /* NSString+SearchString.h */,
+				D79946621EBC1B2100CB4172 /* NSString+SearchString.m */,
 				D7B4FAB21E641282007F580E /* VDRecordTask.h */,
 				D7B4FAB31E641282007F580E /* VDRecordTask.m */,
 				D715CF541E1D0443007C84D2 /* ChartViewController.h */,
@@ -1273,6 +1278,7 @@
 				D7BD7CA41E1E570700453A60 /* AudioStreamer.m in Sources */,
 				D773443F1E10B9E900F2B56B /* SKP_Silk_solve_LS_FIX.c in Sources */,
 				D77344481E10B9E900F2B56B /* SKP_Silk_tables_other.c in Sources */,
+				D79946631EBC1B2100CB4172 /* NSString+SearchString.m in Sources */,
 				D749D94C1E163F2400959D28 /* MJRefreshNormalHeader.m in Sources */,
 				D773442E1E10B9E900F2B56B /* SKP_Silk_resampler_private_ARMA4.c in Sources */,
 				D77343F91E10B9E900F2B56B /* SKP_Silk_decoder_set_fs.c in Sources */,

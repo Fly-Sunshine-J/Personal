@@ -15,6 +15,7 @@
 #import "AudioUtil.h"
 #import "ChartViewController.h"
 #import "SSZipArchive/ZipArchive.h"
+#import "NSString+SearchString.h"
 
 @interface ViewController ()<VDRecordDelegate, AVAudioRecorderDelegate>{
     BOOL pause;
@@ -35,6 +36,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -46,7 +48,14 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&err1];
     [[AVAudioSession sharedInstance] setActive:YES error:&err2];
     NSLog(@"err1 : %@, err2: %@", err1.localizedDescription, err2.localizedDescription);
+   
 }
+
+
+
+
+
+
 
 - (IBAction)start:(UIButton *)sender {
     _path = [NSString stringWithFormat:@"%@/%0.fsource.m4a", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0], [[NSDate date] timeIntervalSince1970]];
@@ -78,8 +87,19 @@
 
 
 - (IBAction)stop:(UIButton *)sender {
+    NSString *str = @"明天会更好明天会更好明天会更好明天会更好明天会更好明天会更好明天会更好";
+    NSMutableArray *array = [str searchResult:@"明天"];
+    for (NSString *rangeString in array) {
+        NSRange range = NSRangeFromString(rangeString);
+        NSLog(@"%@", [str substringWithRange:range]);
+    }
+    
+    
+
     [_record AudioSessionDispose];
 //    [_recoder stop];
+    
+   
 }
 
 - (IBAction)play:(id)sender {

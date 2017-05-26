@@ -32,7 +32,9 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
 
-    //    [self customCharts];
+    //[self customCharts];
+    
+    
     
     
     TreeViewNode *node00 = [[TreeViewNode alloc] init];
