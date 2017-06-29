@@ -11,6 +11,7 @@
 @interface CYWCalendarCollectionViewFlowLayout ()
 
 @property (nonatomic, strong) NSMutableArray *atts;
+@property (nonatomic, assign) NSInteger count;
 
 @end
 
@@ -59,10 +60,12 @@
     CGFloat yCellOffset = (attributes.indexPath.item / _column) * self.itemSize.height;
     xCellOffset += offset;
     attributes.frame = CGRectMake(xCellOffset, yCellOffset, self.itemSize.width, self.itemSize.height);
+    _count++;
 }
 
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
+    NSLog(@"------------%@", @(_count));
     return _atts;
 }
 

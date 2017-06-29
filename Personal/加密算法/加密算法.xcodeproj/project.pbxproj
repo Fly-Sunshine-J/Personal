@@ -493,7 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cyw.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a2e7739c-5724-4394-9d2f-92460c8d93ae";
+				PROVISIONING_PROFILE = "08c86d5a-3dbd-4ca6-8072-874b8eabf518";
 				PROVISIONING_PROFILE_SPECIFIER = CYW_ALL_APP_Development;
 			};
 			name = Debug;
@@ -508,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cyw.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = CYW_ALL_APP_Development;
 			};
 			name = Release;
 		};

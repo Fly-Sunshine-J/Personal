@@ -24,7 +24,8 @@
 }
 
 - (IBAction)md5:(id)sender {
-    NSString *encryption = [JFYMD5Tool encryptMD5ForUpper32Bate:_textField.text];
+//    NSString *encryption = [JFYMD5Tool encryptMD5ForUpper32Bate:_textField.text];
+    NSString *encryption = [JFYMD5Tool encryptMD5ForUpper32Bate:@"venueIdFKEY20170621,dadserver,"];
     _encryptionLabel.text = encryption;
 }
 

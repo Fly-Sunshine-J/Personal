@@ -9,7 +9,10 @@
 #import "ViewController.h"
 #import "CYWCalendarView.h"
 #import "Masonry.h"
+#import <objc/runtime.h>
 
+FOUNDATION_EXPORT NSNotificationName const AAA;
+NSNotificationName const AAA = @"AAA";
 @interface ViewController ()
 
 @property (nonatomic, strong) CYWCalendarView *dayCalendar;
@@ -23,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"%@", AAA);
     
     _dayCalendar = [[CYWCalendarView alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, (self.view.frame.size.width - 40) / 7 * 6 + 80) CalendarType:CYWCalendarTypeOfDay];
     _dayCalendar.selectDateModelCallBack = ^(CYWCalendarModel *model) {

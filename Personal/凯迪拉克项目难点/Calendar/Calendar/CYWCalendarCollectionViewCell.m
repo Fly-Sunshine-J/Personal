@@ -61,9 +61,6 @@
     }
 }
 
-/**
- 阿特兹    昂克赛拉
- **/
 
 
 - (void)selectDate:(UITapGestureRecognizer *)tap {
