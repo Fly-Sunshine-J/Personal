@@ -22,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.w3school.com.cn/example/xmle/simple.xml"]];
+    [NSURLConnection sendAsynchronousRequest:request queue:nil completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        NSLog(@"%@", data);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
