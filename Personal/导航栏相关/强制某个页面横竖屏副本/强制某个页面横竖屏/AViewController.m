@@ -24,11 +24,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [ScreenDirectionManager manager].landscape = YES;
-    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
-        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeLeft) forKey:@"orientation"];
-    }
-    
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
