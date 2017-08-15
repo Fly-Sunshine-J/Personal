@@ -37,7 +37,7 @@
     
     NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
     NSLog(@"save start");
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 20000; i++) {
         NSEntityDescription *entity = [NSEntityDescription entityForName:@"Student" inManagedObjectContext:context];
         //创建学生对象
         Student *stu = [[Student alloc] initWithEntity:entity insertIntoManagedObjectContext:context];

@@ -24,7 +24,7 @@
 }
 - (IBAction)add:(UIButton *)sender {
     NSLog(@"save start");
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 1000; i++) {
         NSString *sql = [NSString stringWithFormat:@"insert into mytable(name, age) values('张三%d', '%d')", i, 20];
         [[DataBaseManager shareManager] insertDataWithSQL:sql];
     }

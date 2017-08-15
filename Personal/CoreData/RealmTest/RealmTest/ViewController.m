@@ -25,7 +25,7 @@
 
 - (IBAction)add:(UIButton *)sender {
     NSLog(@"save start");
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 100; i++) {
         Student *stu = [[Student alloc] initWithValue:@{@"num": @(i), @"name": [NSString stringWithFormat:@"张三%d", i], @"age":@20}];
         for (int j = 0; j < 2; j ++) {
             Book *book = [[Book alloc] initWithValue:@[[NSString stringWithFormat:@"红楼梦%d", j], @19.8, stu]];
@@ -50,7 +50,7 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning { 
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
