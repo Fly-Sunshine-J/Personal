@@ -22,7 +22,7 @@ static const void *nameKey = &nameKey;
 //    Method method = class_getInstanceMethod(self, @selector(setBackgroundColor:));
 //    _setColor = method_setImplementation(method, (IMP)colorOfBackground);
     //方法2
-    _setColor = class_replaceMethod(self, @selector(setBackgroundColor:), (IMP)colorOfBackground, "@");
+    _setColor = class_replaceMethod(self, @selector(setBackgroundColor:), (IMP)colorOfBackground, "v@:@");
     //方法3
 //    Method method1 = class_getInstanceMethod(self, @selector(setBackgroundColor:));
 //    Method method2 = class_getInstanceMethod(self, @selector(colorForBackgroundColor:));

@@ -17,6 +17,8 @@
 		D70E8AAB1F022F73003DF18F /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D70E8AAA1F022F73003DF18F /* RuntimeUITests.m */; };
 		D70E8ABA1F0232F0003DF18F /* MyClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = D70E8AB91F0232F0003DF18F /* MyClass1.m */; };
 		D71A77D81F026152006C58BE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = D71A77D71F026152006C58BE /* UIView+Border.m */; };
+		D75433E81F4D57D300C1132A /* NSObject+Count.m in Sources */ = {isa = PBXBuildFile; fileRef = D75433E71F4D57D300C1132A /* NSObject+Count.m */; };
+		D7A21E981F4D7B6100AF4786 /* NSObject+FSKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A21E971F4D7B6100AF4786 /* NSObject+FSKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		D70E8AB91F0232F0003DF18F /* MyClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass1.m; sourceTree = "<group>"; };
 		D71A77D61F026152006C58BE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		D71A77D71F026152006C58BE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		D75433E61F4D57D300C1132A /* NSObject+Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Count.h"; sourceTree = "<group>"; };
+		D75433E71F4D57D300C1132A /* NSObject+Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Count.m"; sourceTree = "<group>"; };
+		D7A21E961F4D7B6100AF4786 /* NSObject+FSKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FSKVO.h"; sourceTree = "<group>"; };
+		D7A21E971F4D7B6100AF4786 /* NSObject+FSKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FSKVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				D70E8A8C1F022F73003DF18F /* ViewController.m */,
 				D71A77D61F026152006C58BE /* UIView+Border.h */,
 				D71A77D71F026152006C58BE /* UIView+Border.m */,
+				D75433E61F4D57D300C1132A /* NSObject+Count.h */,
+				D75433E71F4D57D300C1132A /* NSObject+Count.m */,
+				D7A21E961F4D7B6100AF4786 /* NSObject+FSKVO.h */,
+				D7A21E971F4D7B6100AF4786 /* NSObject+FSKVO.m */,
 				D70E8AB81F0232F0003DF18F /* MyClass1.h */,
 				D70E8AB91F0232F0003DF18F /* MyClass1.m */,
 				D70E8A8E1F022F73003DF18F /* Main.storyboard */,
@@ -285,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D70E8A8D1F022F73003DF18F /* ViewController.m in Sources */,
+				D75433E81F4D57D300C1132A /* NSObject+Count.m in Sources */,
 				D71A77D81F026152006C58BE /* UIView+Border.m in Sources */,
+				D7A21E981F4D7B6100AF4786 /* NSObject+FSKVO.m in Sources */,
 				D70E8A8A1F022F73003DF18F /* AppDelegate.m in Sources */,
 				D70E8ABA1F0232F0003DF18F /* MyClass1.m in Sources */,
 				D70E8A871F022F73003DF18F /* main.m in Sources */,
@@ -436,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M974WD5VWM;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.Runtime;
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.Runtime;

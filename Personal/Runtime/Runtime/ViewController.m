@@ -10,8 +10,11 @@
 #import "MyClass1.h"
 #import <objc/runtime.h>
 #import "UIView+Border.h"
+#import "NSObject+FSKVO.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) MyClass1 *cls;
 
 @end
 
@@ -20,8 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self ex_registerNewClass];
-    [self myClass1];
+    //[self ex_registerNewClass];
+    //[self myClass1];
+    
+    MyClass1 *class1 = [[MyClass1 alloc] init];
+    _cls = class1;
+    class1.string = @"test";
+    [class1 fs_addObserver:self forKeyPath:@"string" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
 
     UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     colorView.backgroundColor = [UIColor greenColor];
@@ -32,12 +40,23 @@
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    static int i;
+    i++;
+    _cls.string = [NSString stringWithFormat:@"%d", i];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"%@-%@", keyPath, change);
+}
 
 - (void)myClass1 {
     
     MyClass1 *class1 = [[MyClass1 alloc] init];
+    _cls = class1;
     class1.string = @"test";
     Class cls = [class1 class];
+    
     
     //类名
     NSLog(@"class name: %s", class_getName(cls));
@@ -58,6 +77,7 @@
     //变量实例的大小
     NSLog(@"instance size: %zu", class_getInstanceSize(cls));
     NSLog(@"//变量实例的大小---------------------------------------------");
+    
     
     //成员变量
     
@@ -87,7 +107,6 @@
     NSLog(@"//成员变量---------------------------------------------");
     
     
-    
     //属性
     
     /*****添加属性*****/
@@ -107,6 +126,8 @@
     [class1 performSelector:NSSelectorFromString(@"setAge:") withObject:@99];
     NSLog(@"class1 age is %@", [class1 performSelector:NSSelectorFromString(@"age")]);
     
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:class1];
+    MyClass1 *c = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     
     
 //    /*****替换属性*****/
@@ -118,6 +139,10 @@
     objc_property_t * properties = class_copyPropertyList(cls, &count);    //获取属性列表
     for (int i = 0; i < count; i++) {
         objc_property_t property = properties[i];
+        
+        NSString *str= [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
+        
+        char * s = property_copyAttributeValue(property, "T");
         unsigned int j;
         /*****获取属性的属性*****/
         objc_property_attribute_t *att_ts = property_copyAttributeList(property, &j);
