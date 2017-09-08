@@ -8,6 +8,7 @@
 
 #import "RollScrollView.h"
 #import "UIImageView+WebCache.h"
+#import "WeakTimer.h"
 
 static int const imageViewCount = 3;
 
@@ -90,6 +91,7 @@ static int const imageViewCount = 3;
     
     //pageControl的位置
     self.pageControlPosition = PageControlPosition_None;
+    [self displayImage];
 }
 
 
@@ -114,6 +116,7 @@ static int const imageViewCount = 3;
         }
     }
     self.pageControl.currentPage = page;
+
 }
 
 //开始拖拽  结束定时器
@@ -137,8 +140,8 @@ static int const imageViewCount = 3;
 
 - (void)startTimer {
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(displayNextImage:) userInfo:nil repeats:YES];
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+//    self.timer = [WeakTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(displayNextImage:) userInfo:nil repeats:YES];
+//    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 //定时器方法  下一张图片
@@ -164,38 +167,40 @@ static int const imageViewCount = 3;
 }
 
 - (void)displayImage {
-    
-    // 设置图片，三张imageview显示无限张图片
-    for (int i = 0; i<imageViewCount; i++) {
-        UIImageView *imageView = self.scrollView.subviews[i];
-        NSInteger index = self.pageControl.currentPage;
-        /**
-         *  滚到第一张，并且是程序刚启动是第一次加载图片，index才减一。
-         加上这个判断条件，是为了防止当程序第一次加载图片时，此时第一张图片的i=0，那么此时index--导致index<0，进入下面index<0的判断条件，让第一个imageview显示的是最后一张图片
-         */
-        if (i == 0 && self.isFirstLoadImage) {
-            index--;
-        }else if (i == 2) {//滚到最后一张图片，index加1
-            index++;
+    if (self.imageArray.count > 2) {
+        
+        // 设置图片，三张imageview显示无限张图片
+        for (int i = 0; i<imageViewCount; i++) {
+            UIImageView *imageView = self.scrollView.subviews[i];
+            NSInteger index = self.pageControl.currentPage;
+            /**
+             *  滚到第一张，并且是程序刚启动是第一次加载图片，index才减一。
+             加上这个判断条件，是为了防止当程序第一次加载图片时，此时第一张图片的i=0，那么此时index--导致index<0，进入下面index<0的判断条件，让第一个imageview显示的是最后一张图片
+             */
+            if (i == 0 && self.isFirstLoadImage) {
+                index--;
+            }else if (i == 2) {//滚到最后一张图片，index加1
+                index++;
+            }
+            
+            if (index < 0) {//如果滚到第一张还继续向前滚，那么就显示最后一张
+                index = self.pageControl.numberOfPages-1 ;
+            }else if (index >= self.pageControl.numberOfPages) {//滚动到最后一张的时候，由于index加了一，导致index大于总的图片个数，此时把index重置为0，所以此时滚动到最后再继续向后滚动就显示第一张图片了
+                index = 0;
+            }
+            
+            imageView.tag = index;
+            [self loadImage:index withImageView:imageView];
         }
         
-        if (index < 0) {//如果滚到第一张还继续向前滚，那么就显示最后一张
-            index = self.pageControl.numberOfPages-1 ;
-        }else if (index >= self.pageControl.numberOfPages) {//滚动到最后一张的时候，由于index加了一，导致index大于总的图片个数，此时把index重置为0，所以此时滚动到最后再继续向后滚动就显示第一张图片了
-            index = 0;
-        }
+        self.isFirstLoadImage =YES;
         
-        imageView.tag = index;
-        [self loadImage:index withImageView:imageView];
-    }
-    
-    self.isFirstLoadImage =YES;
-    
-    // 偏移一个scrollview的高度或者宽度，让scrollview显示中间的imageview
-    if (self.isPortrait) {
-        self.scrollView.contentOffset = CGPointMake(0, self.scrollView.frame.size.height);
-    } else {
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
+        // 偏移一个scrollview的高度或者宽度，让scrollview显示中间的imageview
+        if (self.isPortrait) {
+            self.scrollView.contentOffset = CGPointMake(0, self.scrollView.frame.size.height);
+        } else {
+            self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
+        }
     }
 }
 
@@ -261,6 +266,10 @@ static int const imageViewCount = 3;
     [self displayImage];
     
     [self startTimer];
+}
+
+- (void)dealloc {
+    NSLog(@"RollScrollView被销毁");
 }
 
 @end

@@ -35,6 +35,7 @@ static JFYRSATool *tool = nil;
 
 - (void)loadPublicKeyFromFile:(NSString *)filePath {
     NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
+    NSString *dataString = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     SecCertificateRef certificateRef = SecCertificateCreateWithData(kCFAllocatorDefault, (__bridge CFDataRef)data);
     SecPolicyRef policyRef = SecPolicyCreateBasicX509();
     SecTrustRef trustRef;
@@ -89,7 +90,7 @@ static JFYRSATool *tool = nil;
     size_t blockCount = (size_t)ceil([data length] / (double)blockSize);
     NSMutableData *encryptedData = [[NSMutableData alloc] init] ;
     for (int i=0; i<blockCount; i++) {
-        int bufferSize = MIN(blockSize,[data length] - i * blockSize);
+        unsigned long bufferSize = MIN(blockSize,[data length] - i * blockSize);
         NSData *buffer = [data subdataWithRange:NSMakeRange(i * blockSize, bufferSize)];
         OSStatus status = SecKeyEncrypt(key, kSecPaddingPKCS1, (const uint8_t *)[buffer bytes], [buffer length], cipherBuffer, &cipherBufferSize);
         if (status == noErr){

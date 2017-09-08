@@ -81,6 +81,7 @@
 		D71A12941D23CE72004E1144 /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71A12931D23CE72004E1144 /* WaterFlowViewController.m */; };
 		D71A12981D23D0B2004E1144 /* WaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D71A12961D23D0B2004E1144 /* WaterFlowCell.m */; };
 		D71A12991D23D0B2004E1144 /* WaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D71A12971D23D0B2004E1144 /* WaterFlowCell.xib */; };
+		D71C675A1F6296570078776F /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D71C67591F6296570078776F /* WeakTimer.m */; };
 		D73FDFAA1D24D1D5002992AF /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73FDFA91D24D1D5002992AF /* 1.plist */; };
 		D73FDFAD1D24D255002992AF /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D73FDFAC1D24D255002992AF /* GoodsModel.m */; };
 		D73FE01C1D24E814002992AF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D73FDFF01D24E814002992AF /* MJRefreshAutoFooter.m */; };
@@ -358,6 +359,8 @@
 		D71A12951D23D0B2004E1144 /* WaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCell.h; sourceTree = "<group>"; };
 		D71A12961D23D0B2004E1144 /* WaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCell.m; sourceTree = "<group>"; };
 		D71A12971D23D0B2004E1144 /* WaterFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterFlowCell.xib; sourceTree = "<group>"; };
+		D71C67581F6296570078776F /* WeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
+		D71C67591F6296570078776F /* WeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
 		D73FDFA91D24D1D5002992AF /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		D73FDFAB1D24D255002992AF /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
 		D73FDFAC1D24D255002992AF /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
@@ -683,6 +686,8 @@
 		D71A114E1D224B94004E1144 /* 三张图片轮播图 */ = {
 			isa = PBXGroup;
 			children = (
+				D71C67581F6296570078776F /* WeakTimer.h */,
+				D71C67591F6296570078776F /* WeakTimer.m */,
 				D71A119A1D2253FF004E1144 /* RollScrollView.h */,
 				D71A119B1D2253FF004E1144 /* RollScrollView.m */,
 				D71A11521D224BC5004E1144 /* RollViewController.h */,
@@ -1434,6 +1439,7 @@
 				D7A753391D337AC400EA1B6E /* UIImage+RoundRectImage.m in Sources */,
 				D73FE02B1D24E814002992AF /* MJRefreshConst.m in Sources */,
 				D71A11761D224CA1004E1144 /* SDWebImageCompat.m in Sources */,
+				D71C675A1F6296570078776F /* WeakTimer.m in Sources */,
 				D7CED7F71D260AE600124DA5 /* CalendarDayModel.m in Sources */,
 				D7CED7FA1D260B5700124DA5 /* CalendarLogic.m in Sources */,
 				D71A11401D221FF9004E1144 /* BaseTableViewController.m in Sources */,
@@ -1633,7 +1639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Maimaiti Aini (Y686B6B9MA)";
 				INFOPLIST_FILE = "Demo测试/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vcyber.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1648,7 +1654,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Maimaiti Aini (25AALVE3Z7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Maimaiti Aini (25AALVE3Z7)";
 				INFOPLIST_FILE = "Demo测试/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vcyber.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

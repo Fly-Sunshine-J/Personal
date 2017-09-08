@@ -15,6 +15,7 @@
 		D7651E131ED4030A0046E27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7651E111ED4030A0046E27E /* LaunchScreen.storyboard */; };
 		D7651E1E1ED4030A0046E27E /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7651E1D1ED4030A0046E27E /* ____Tests.m */; };
 		D7651E291ED4030A0046E27E /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7651E281ED4030A0046E27E /* ____UITests.m */; };
+		D77763E21F5E41FB00F39B1E /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77763E41F5E41FB00F39B1E /* File.strings */; };
 		D7DF25F21ED415A1005F6EDE /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF25F11ED415A1005F6EDE /* RootTableViewController.m */; };
 		D7DF25F81ED42225005F6EDE /* DES3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF25F71ED42225005F6EDE /* DES3ViewController.m */; };
 		D7DF25FE1ED431BE005F6EDE /* AESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF25FD1ED431BE005F6EDE /* AESViewController.m */; };
@@ -61,6 +62,13 @@
 		D7651E241ED4030A0046E27E /* 加密算法UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "加密算法UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7651E281ED4030A0046E27E /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		D7651E2A1ED4030A0046E27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77763DC1F5E41BE00F39B1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D77763DD1F5E41BF00F39B1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D77763DE1F5E41C400F39B1E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D77763DF1F5E41C400F39B1E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D77763E31F5E41FB00F39B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
+		D77763E51F5E420100F39B1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/File.strings"; sourceTree = "<group>"; };
+		D77763E61F5E420400F39B1E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/File.strings; sourceTree = "<group>"; };
 		D7DF25F01ED415A1005F6EDE /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
 		D7DF25F11ED415A1005F6EDE /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		D7DF25F61ED42225005F6EDE /* DES3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3ViewController.h; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 		D7651DF71ED4030A0046E27E = {
 			isa = PBXGroup;
 			children = (
+				D77763E41F5E41FB00F39B1E /* File.strings */,
 				D7651E021ED4030A0046E27E /* 加密算法 */,
 				D7651E1C1ED4030A0046E27E /* 加密算法Tests */,
 				D7651E271ED4030A0046E27E /* 加密算法UITests */,
@@ -283,6 +292,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				fr,
 			);
 			mainGroup = D7651DF71ED4030A0046E27E;
 			productRefGroup = D7651E011ED4030A0046E27E /* Products */;
@@ -303,6 +314,7 @@
 			files = (
 				D7651E131ED4030A0046E27E /* LaunchScreen.storyboard in Resources */,
 				D7DF261E1ED559B8005F6EDE /* pkcs.p12 in Resources */,
+				D77763E21F5E41FB00F39B1E /* File.strings in Resources */,
 				D7651E101ED4030A0046E27E /* Assets.xcassets in Resources */,
 				D7DF261D1ED559B8005F6EDE /* public_key.der in Resources */,
 				D7651E0E1ED4030A0046E27E /* Main.storyboard in Resources */,
@@ -380,6 +392,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D7651E0D1ED4030A0046E27E /* Base */,
+				D77763DC1F5E41BE00F39B1E /* zh-Hans */,
+				D77763DE1F5E41C400F39B1E /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -388,8 +402,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				D7651E121ED4030A0046E27E /* Base */,
+				D77763DD1F5E41BF00F39B1E /* zh-Hans */,
+				D77763DF1F5E41C400F39B1E /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D77763E41F5E41FB00F39B1E /* File.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D77763E31F5E41FB00F39B1E /* en */,
+				D77763E51F5E420100F39B1E /* zh-Hans */,
+				D77763E61F5E420400F39B1E /* fr */,
+			);
+			name = File.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -446,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
