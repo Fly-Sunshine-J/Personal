@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Demo测试";
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     view.backgroundColor = [UIColor redColor];
     [self.navigationController.view addSubview:view];
     self.dataArray = [NSMutableArray arrayWithObjects:@[@"1.BezierPath动画", @"BezierPathViewController"],
