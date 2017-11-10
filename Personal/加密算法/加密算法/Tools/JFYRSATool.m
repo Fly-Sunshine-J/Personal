@@ -35,7 +35,6 @@ static JFYRSATool *tool = nil;
 
 - (void)loadPublicKeyFromFile:(NSString *)filePath {
     NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
-    NSString *dataString = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     SecCertificateRef certificateRef = SecCertificateCreateWithData(kCFAllocatorDefault, (__bridge CFDataRef)data);
     SecPolicyRef policyRef = SecPolicyCreateBasicX509();
     SecTrustRef trustRef;
@@ -55,7 +54,7 @@ static JFYRSATool *tool = nil;
 
 - (void)loadPrivateKeyFromFile:(NSString *)filePath password:(NSString *)p12Password {
     NSData *p12Data = [[NSData alloc] initWithContentsOfFile:filePath];
-    SecKeyRef privateKeyRef;
+    SecKeyRef privateKeyRef = NULL;
     NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
     [options setObject:p12Password forKey:(__bridge NSString*)kSecImportExportPassphrase];
     CFArrayRef items = CFArrayCreate(NULL, 0, 0, NULL);
