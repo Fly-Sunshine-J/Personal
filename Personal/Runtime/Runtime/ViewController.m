@@ -38,6 +38,7 @@
     colorView.name = @"RedView";
     NSLog(@"colorView page is %d, name is %@", colorView.page, colorView.name);
     
+    [self myClass1];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

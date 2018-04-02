@@ -33,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.musicArray = [NSMutableArray arrayWithArray:@[@"http://192.168.6.9/1.mp3", @"http://192.168.6.9/2.mp3", @"http://192.168.6.9/3.mp3"]];
+    self.musicArray = [NSMutableArray arrayWithArray:@[@"http://192.168.100.140/2.mp3", @"http://192.168.100.140/3.mp3", @"http://192.168.100.140/lalalademaxiya.wav"]];
     self.currentIndex = 0;
     
    

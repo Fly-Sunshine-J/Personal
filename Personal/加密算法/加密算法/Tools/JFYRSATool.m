@@ -75,8 +75,8 @@ static JFYRSATool *tool = nil;
 #pragma mark - Encrypt
 -(NSString*) rsaEncryptString:(NSString*)string {
     NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    NSData* encryptedData = [self rsaEncryptData: data];
-    NSString* base64EncryptedString = [encryptedData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+    NSData* encryptedData = [[self rsaEncryptData: data] base64EncodedDataWithOptions:0];
+    NSString* base64EncryptedString = [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
     return base64EncryptedString;
 }
 
